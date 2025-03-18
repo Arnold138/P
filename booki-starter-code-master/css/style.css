@@ -164,4 +164,18 @@ a {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     /* ... */
+} 
+
+
+/* à partir de la je prend la main */
+
+nav {
+    display: flex;
+    width: 100%;
+}
+.logo {
+    width: 61px;
+    margin-left: 50px;
+    margin-top: 30px;
+    height: 19px;
 }
