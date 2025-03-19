@@ -174,7 +174,48 @@ nav {
 }
 .logo {
     width: 61px;
-    margin-left: 50px;
-    margin-top: 30px;
+    margin-left: 22px;
+    margin-top: 5px;
     height: 19px;
+}
+
+ul {
+    display: flex;
+    gap: 36px;
+    list-style: none;
+    margin-left: 560px;
+}
+
+.nav-link {
+    display: flex;
+    gap: 36px;
+    list-style: none;
+    margin-left: 550px;
+    margin-top: 5px;
+}
+
+li {
+    height: 14px;
+} 
+form {
+    display: flex;
+}
+
+.recherche-button button  {
+
+    border-top-right-radius: 15px;
+    border-bottom-right-radius:15px;
+    background:#0065FC;
+    color:white;
+    padding: 10px 10px 10px 10px;
+    border: 1px;
+}
+ 
+i.fas.fa-map-marker-alt {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background: #F2F2F2;
+    border: 1px #F2F2F2;
+    margin: 0px 0px 0px 30px;
+    padding: 10px 13px 10px 14px;
 }
