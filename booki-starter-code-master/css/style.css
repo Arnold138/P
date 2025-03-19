@@ -11,6 +11,7 @@
 
 .fa-solid {
     color: var(--main-color);
+    padding-right: 9px;
 }
 
 body {
@@ -180,20 +181,78 @@ nav {
 }
 
 .nav-links {
+    width: 250px;
     display: flex;
+    justify-content: center;
     gap: 36px;
     list-style: none;
     margin-left: 780px;
     margin-top: auto;
     position: absolute;
     right: 20px;
+    padding: 0%;
 }
+.hebergementss { 
+    display: inline-block;
+    padding-bottom: 5px;
+    transition: color 0.3s ease-in-out;
+    width: fit-content;
+}
+
+.activitess { 
+    display: inline-block;
+    padding-bottom: 5px;
+    transition: color 0.3s ease-in-out;
+    width: fit-content;
+} 
+
+.activitess:hover { 
+    color: #0065FC;
+
+}
+
+.hebergementss:hover { 
+    color: #0065FC;
+
+}
+
+.hebergementss::before { 
+
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    background-color: blue;
+    top: -10px; ;
+    left: 0;
+    transition: width 0.3s ease-in-out;
+}
+
+.activitess::before { 
+
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    background-color: blue;
+    top: -10px; ;
+    right: 0;
+    transition: width 0.3s ease-in-out;
+}
+.hebergementss:hover::before{ 
+    width: 57%;
+}
+.activitess:hover::before{ 
+    width: 45%;
+}
+
+
 li {
     height: 14px;
 } 
 form {
     display: flex;
-    margin: 0px 0px 5px 10px;
+    margin: 0px 0px 25px 10px;
 }
 
 .recherche-button button  {
@@ -231,6 +290,7 @@ ul.filters {
     display: flex;
     gap: 10px;
     list-style: none;
+    margin: auto;
 }   
 
 
@@ -258,6 +318,7 @@ i.fas.fa-solid.fa-money-bill-wave {
     padding-right: 8px;
     color: blue;
     padding-left: 6px;
+    padding-right: 5px;
     margin-right: 6px;
 }
 
@@ -295,4 +356,9 @@ i.fas.fa-fire {
     display: flex;
     color: blue;
     margin-right: 7px;
+}
+
+button:hover{
+   background-color: #DEEBFF;
+   transition: all 0.3s ease-in-out;
 }
