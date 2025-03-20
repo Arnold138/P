@@ -257,24 +257,43 @@ form {
 
 .recherche-button button  {
 
-    border-top-right-radius: 15px;
-    border-bottom-right-radius:15px;
-    background:#0065FC;
-    color:white;
-    padding: 15px 16px 15px 15px;
-    border: 1px;
+border-top-right-radius: 15px;
+border-bottom-right-radius:15px;
+background:#0065FC;
+color:white;
+padding: 15px 35px 16px 15px;
+border: 1px;
 }
- 
+
+.search-icon, .search-text {
+    display: none; /* Cache la loupe */
+
+}
+@media screen and (max-width: 768px) {
+    .search-text, strong {
+        display: none; /* Cache le texte */
+    }
+    .search-icon {
+        display: inline-block; /* Affiche la loupe*/
+        font-size: 18pxx;
+    }
+   .search-text {
+    display: none;
+   }
+    
+} 
+
 i.fas.fa-map-marker-alt {
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     background: #F2F2F2;
     border: 1px #F2F2F2;
     margin: 0px 0px 0px 30px;
-    padding: 15px 15px 15px 15px;
+    padding: 15px 25px 15px 25px;
 } 
 input#search {
     border: solid 1px #F2F2F2;
+    padding: 15px 15px 15px 15px;
 } 
 
 h1 {margin: 35px 0px 0px 40px;font-size: 22px;}
@@ -323,7 +342,7 @@ i.fas.fa-solid.fa-money-bill-wave {
 }
 
 .filter-header {
-    margin-bottom: 100px;
+    margin-bottom: 25px;
 }
 
 i.fas.fa-solid.fa-person {
@@ -361,4 +380,19 @@ i.fas.fa-fire {
 button:hover{
    background-color: #DEEBFF;
    transition: all 0.3s ease-in-out;
+} 
+i.fa-solid.fa-info {
+    display: inline-flex;
+    align-items: center;
+    width: 19px;
+    height: 19px;
+    border: 1px solid #D9D9D9;
+    border-radius: 50%;
+    justify-content: center;
+    padding: inherit;
+    margin-right: 10Px;
+}
+
+p.soustitress {
+    font-size: 12px;
 }
