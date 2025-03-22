@@ -179,7 +179,7 @@ nav {
 }
 .logo {
     width: 61px;
-    margin-left: 22px;
+    margin-left: 28px;
     margin-top: 5px;
     height: 19px;
 }
@@ -256,7 +256,7 @@ li {
 } 
 form {
     display: flex;
-    margin: 0px 0px 25px 10px;
+    margin: 0px 0px 25px 25px;
 }
 
 .recherche-button button  {
@@ -279,7 +279,7 @@ border: 1px;
     }
     .search-icon {
         display: inline-block; /* Affiche la loupe*/
-        font-size: 18pxx;
+        font-size: 18px;
     }
    .search-text {
     display: none;
@@ -300,10 +300,10 @@ input#search {
     padding: 15px 15px 15px 15px;
 } 
 
-h1 {margin: 35px 0px 0px 40px;font-size: 22px;}
+h1 {margin: 35px 0px 0px 53px;font-size: 22px;}
 
 .soustitres {
-    margin: 9px 0px 30px 40px;
+    margin: 10px 0px 30px 55px;
 }
 p.filter-title {
     margin-right: 20px
@@ -348,6 +348,7 @@ i.fas.fa-solid.fa-money-bill-wave {
 
 .filter-header {
     margin-bottom: 25px;
+    margin-left: 13px;
 }
 
 i.fas.fa-solid.fa-person {
@@ -501,16 +502,20 @@ h2.section-title {
 
 h2.section-titlemarseille {
     position: RELATIVE;
-    top: -31px;
+    top: 6px;
     height: 0px;
     width: 145px;
     padding: 16px;
     text-align: center;
     white-space: nowrap;
-    left: 59px;
+    left: 13px;
     margin-top: 52px;
 }
-
+div.hebergements-and-populaires h2.section-titlemarseille {
+    position: relative;
+    top: -29Px;
+    left: 41px;
+}
 
 
 .hebergements-cards .card {
@@ -520,7 +525,7 @@ h2.section-titlemarseille {
 
 p.card-subtitle span 
 {margin: -1px;
-    padding: -2px;
+    padding: 0%;
 }
 
 .hebergements .card-txt H3 {
@@ -538,7 +543,7 @@ article.card {
 
 .card-content {
     margin: -6px;
-    padding: -1px;
+    padding: 0%;
 }
 
 .hebergements .card-rating {
@@ -550,7 +555,7 @@ article.card {
 p.card-subtitle {
     padding-left: 15px;
     padding-bottom: 8px;
-    padding-top: -5px;
+    padding-top: 0%;
     margin-top: 10px;
 } 
 
@@ -578,4 +583,64 @@ i.fa-solid.fa-chart-line {
 .populaires-cards {
     width: 326px;
     padding: 12px;
+} 
+
+
+section.activitesamarseille {
+    display: flex;
+    width: 62%;
+    gap: 30px;
+    margin-top: 5%;
+}
+
+.cardsmarseille img {
+    width: 360px; /* la pas de classe à la base  */
+}
+
+.activites-cardsmarseille img {
+    width: 274px;
+    height: 375px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.activites-cardsmarseille {
+    margin-left: 3%;
+    background-color: white;
+    border-radius: 20px;
+    padding: 0px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    padding-bottom: 0px;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    height: fit-content;
+}
+
+.card-contentmarseille {
+    margin-left: 3%;
+}
+ /* a partir de la on insere le footer */
+
+ footer {
+    display: flex;
+    gap: 284px;
+    text-align: center;
+    background-color: #D9D9D9;
+    width: 100%;
+    margin-top: 10%;
+    margin-left: 2%;
+}
+
+footer li {
+    list-style: none;
+    margin-bottom: 10%;
+    font-weight: 400;
+    text-align: center;
+    width: 100%;
+}
+
+.footer-container h3 {
+    width: 100%;
+    margin-left: 10%;
 }
