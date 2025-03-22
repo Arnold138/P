@@ -19,9 +19,11 @@ body {
 }
 
 .main-container {
-    width: 108%;
+    width: 111%;
+    margin-top: 1%;
+    margin-bottom: 3px;
     max-width: 1430px;
-    padding: 0px 30px;
+    padding: 0px 20px 0px 30px;
     box-sizing: border-box;
 }
 
@@ -86,7 +88,7 @@ div.populaires-title h2 {
     /* justify-content: space-between; */
     align-items: center;
     /* margin-inline: 0px; */
-    /* margin-top: -21px; */
+    margin-top: 15px;
 }
 
 .populaires-cards .card {
@@ -116,7 +118,7 @@ div.populaires-title h2 {
 }
 
 .populaires-cards .card-subtitle {
-    margin: 0;
+    margin-left: -14px;
 }
 
 .populaires-cards .card-rating {
@@ -312,6 +314,7 @@ ul.filters {
     gap: 10px;
     list-style: none;
     margin: auto;
+    margin-left: 10px;
 }   
 
 
@@ -397,7 +400,37 @@ i.fa-solid.fa-info {
 
 p.soustitress {
     font-size: 12px;
-} 
+    margin-left: 5%;
+}  
+
+h2.afficher-plus {
+    font-size: 19px;
+    margin-bottom: 1px;
+    margin-left: 7px;
+    margin-top: 6%;
+}
+
+i.fa-solid.fa-money-bill-wave {
+    padding-left: 1%;
+    margin-left: 3%;
+}
+
+.economique strong {
+    padding-left: 4%;
+}
+.Familial strong {
+    padding-left: 5%;
+}
+
+button.Familial {
+    padding: 10px 19px 11px 19px;
+    gap: 2%;}
+
+li {padding-left: 1%;}
+
+
+
+
 /* a partir de la on inseres les hebergements */
 
 
@@ -425,8 +458,8 @@ section.hebergements .card {
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     padding-bottom: 42px;
     padding-top: 4px;
-    padding-left: 11px;
-    padding-right: 15px;
+    padding-left: 6px;
+    padding-right: 16px;
     width: fit-content;
     width: 202px;
     height: 149px;
@@ -447,6 +480,7 @@ section.hebergements {
     margin-left: -146px;
     margin-top: 19px;
     height: 57%;
+    padding-right: 0%;
     }
 
 .hebergements-cards .card {
@@ -521,7 +555,7 @@ p.card-subtitle {
 } 
 
 section.populaires {
-    width: 90%;
+    width: 91%;
     height: 100%;
 } 
 
@@ -533,14 +567,15 @@ h2.section-title {
 .populaires-title {
     margin: 4px;
     margin-left: 2%;
+    margin-bottom: -5%;
 }
 
 i.fa-solid.fa-chart-line {
-    margin-left: 291px;
-    margin-top: 15px;
+    margin-left: 326px;
+    margin-top: 25px;
 }
 
 .populaires-cards {
     width: 326px;
-    padding: 11px;
+    padding: 12px;
 }
