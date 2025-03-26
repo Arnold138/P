@@ -236,7 +236,11 @@ nav {
 .activitess:hover::before{ 
     width: 45%;
 }
-
+h2.filter-title {
+    font-size: 19px;
+    padding-top: 20px;
+    margin-left: 48px;
+}
 
 li {
     height: 14px;
@@ -298,10 +302,10 @@ p.filter-title {
 }
 ul.filters {
     display: flex;
-    gap: 10px;
+    gap: 8px;
     list-style: none;
     margin: auto;
-    margin-left: 10px;
+    margin-left: 5px;
 }   
 
 
@@ -335,7 +339,8 @@ i.fas.fa-solid.fa-money-bill-wave {
 
 .filter-header {
     margin-bottom: 25px;
-    margin-left: 13px;
+    margin-left: 10px;
+    display: flex;
 }
 
 i.fas.fa-solid.fa-person {
@@ -414,7 +419,7 @@ button.Familial {
     padding: 10px 19px 11px 19px;
     gap: 2%;}
 
-li {padding-left: 1%;}
+li {padding-left: 0%;}
 
 
 
@@ -451,7 +456,7 @@ section.hebergements .card img {
     border-top-right-radius: 20px;
 } 
 section.hebergements {
-    width: 63%;
+    width: 65%;
     margin-left: 3%;
     padding-left: 0px;
     padding-top: 0%;
@@ -520,11 +525,12 @@ h2.section-title {
     /* width: fit-content; */
     display: flex;
     margin-top: 3%;
+    white-space: nowrap;
 }
 
 i.fa-solid.fa-chart-line {
     width: fit-content;
-    margin-left: 40%;
+    margin-left: 34%;
     margin-top: 1%;
 }
 
@@ -538,8 +544,8 @@ i.fa-solid.fa-chart-line {
 
 section.activitesamarseille {
     display: flex;
-    width: 60%;
-    gap: 30px;
+    width: 20%;
+    gap: 25px;
     margin-top: 3%;
     margin-left: 3%;
 }
