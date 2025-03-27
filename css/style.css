@@ -163,6 +163,8 @@ div.populaires-title h2 {
 nav {
     display: flex;
     width: 100%;
+    max-width: 1440px;
+    justify-content: space-between;
 }
 .logo {
     width: 61px;
@@ -172,16 +174,11 @@ nav {
 }
 
 .nav-links {
-    width: 250px;
     display: flex;
     justify-content: center;
     gap: 36px;
     list-style: none;
-    margin-left: 780px;
     margin-top: auto;
-    position: absolute;
-    right: 20px;
-    padding: 0%;
 }
 .hebergementss { 
     display: inline-block;
@@ -240,6 +237,7 @@ h2.filter-title {
     font-size: 19px;
     padding-top: 20px;
     margin-left: 48px;
+    padding-right: 15px;
 }
 
 li {
@@ -304,8 +302,7 @@ ul.filters {
     display: flex;
     gap: 8px;
     list-style: none;
-    margin: auto;
-    margin-left: 5px;
+    margin: 28px 0px 0px 0px;
 }   
 
 
@@ -392,8 +389,8 @@ i.fa-solid.fa-info {
 }
 
 p.soustitress {
-    font-size: 12px;
-    margin-left: 5%;
+    font-size: 16px;
+    margin-left: 59px;
 }  
 
 h2.afficher-plus {
@@ -440,7 +437,7 @@ section.hebergements .card {
     border-radius: 20px;
     padding: 0px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-    padding-bottom: 42px;
+    padding-bottom: 44px;
     padding-top: 4px;
     padding-left: 6px;
     padding-right: 5px;
@@ -465,7 +462,7 @@ h2.section-titlemarseille {
     margin-top: 3%;
     padding-top: 0%;
     width: auto;
-    margin-left: 5%;
+    margin-left: 87px;
 }
 div.hebergements-and-populaires h2.section-titlemarseille {margin-left: 6%;}
 
@@ -491,16 +488,17 @@ p.card-subtitle span
 }
 
 .hebergements .card-rating {
-    margin: -19px;
-    padding-left: 33px;
+    margin: 0px;
+    padding-left: 15px;
     padding-bottom: 17px;
 }
 
 p.card-subtitle {
-    padding-left: 13px;
-    padding-bottom: 8px;
+    padding-left: 14px;
+    padding-bottom: 4px;
     padding-top: 0%;
-    margin-top: 10px;
+    margin-top: 7px;
+    margin-bottom: 0px;
 }
 
 .populaires-cards p.card-subtitle {
@@ -544,10 +542,10 @@ i.fa-solid.fa-chart-line {
 
 section.activitesamarseille {
     display: flex;
-    width: 20%;
+    width: 100%;
     gap: 25px;
     margin-top: 3%;
-    margin-left: 3%;
+    margin-left: 0%;
 }
 
 .cardsmarseille img {
@@ -581,7 +579,7 @@ section.activitesamarseille {
 
 
 .afficher-plustitle {
-    margin-left: 4%;
+    margin-left: 2%;
     padding-bottom: 2%;
 }
 
