@@ -180,6 +180,7 @@ nav {
     list-style: none;
     padding: 0px;
     margin: 0px;
+    margin-right: 3%;
 }
 .hebergementss {
     display: inline-block;
@@ -603,8 +604,8 @@ header {
     display: flex;
     background-color: #F2F2F2;
     margin-top: 12%;
-    margin-left: 3%;
-    margin-right: 24%;
+    margin-left: 2%;
+    margin-right: 13%;
     justify-content: stretch;
     gap: 16%;
 }
