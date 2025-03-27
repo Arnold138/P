@@ -543,9 +543,9 @@ i.fa-solid.fa-chart-line {
 section.activitesamarseille {
     display: flex;
     width: 100%;
-    gap: 25px;
+    gap: 0px;
     margin-top: 3%;
-    margin-left: 0%;
+    margin-left: 1%;
 }
 
 .cardsmarseille img {
@@ -553,14 +553,14 @@ section.activitesamarseille {
 }
 
 .activites-cardsmarseille img {
-    width: 274px;
+    width: 300px;
     height: 375px;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
 }
 
 .activites-cardsmarseille {
-    margin-left: 3%;
+    margin-left: 2%;
     background-color: white;
     border-radius: 20px;
     padding: 0px;
@@ -590,28 +590,31 @@ header {
 
  footer {
     display: flex;
-    background-color: #D9D9D9;
+    background-color:#F2F2F2;
     margin-top: 12%;
     margin-left: 3%;
-    margin-right: 3%;
+    margin-right: 24%;
+    justify-content: stretch;
+    gap: 16%;
 }
 
 footer li {
     list-style: none;
-    margin-bottom: 10%;
+    margin-bottom: 7%;
     font-weight: 400;
-    text-align: center;
+    text-align: left;
     width: 100%;
 }
 
 .footer-container h3 {
     width: 100%;
-    margin-left: 10%;
+    margin-left: 40px;
+    text-align: left;
 } 
 
 .footer-container {
     width: auto;
-    margin-left: 11%;
+    margin-left: 0%;
     text-align: center;
 } 
 
