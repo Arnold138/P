@@ -263,7 +263,7 @@ color:white;
 padding: 15px 35px 16px 15px;
 border: 1px;
 } 
-form input::placeholder{ 
+form input#search { 
     font-weight: bold;
     color: #000;
     opacity: 1;
