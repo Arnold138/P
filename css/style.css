@@ -178,20 +178,27 @@ nav {
     justify-content: center;
     gap: 36px;
     list-style: none;
-    margin-top: auto;
+    padding: 0px;
+    margin: 0px;
 }
-.hebergementss { 
+.hebergementss {
     display: inline-block;
-    padding-bottom: 5px;
+    /* padding-bottom: 5px; */
     transition: color 0.3s ease-in-out;
     width: fit-content;
+    position: relative;
+    padding-top: 3px;
 }
 
-.activitess { 
+a.hebergementss:hover::before {
+    width: 110%;
+}
+
+.activitess {
     display: inline-block;
-    padding-bottom: 5px;
-    transition: color 0.3s ease-in-out;
-    width: fit-content;
+    position: relative;
+    border-top: 3px solid transparent;
+    transition: border-color 0.3s ease;
 } 
 
 .activitess:hover { 
@@ -204,35 +211,33 @@ nav {
 
 }
 
-.hebergementss::before { 
-
+.hebergementss::before {
     content: "";
     position: absolute;
     width: 0%;
     height: 3px;
     background-color: blue;
-    top: -10px; ;
-    left: 0;
-    transition: width 0.3s ease-in-out;
-}
+    top: -10px;
+    left: -1px;
+    transition: width 0.3s ease-in-out;}
 
-.activitess::before { 
-
+.activitess::before {
     content: "";
-    position: absolute;
-    width: 0%;
-    height: 3px;
+    position:absolute;
+    left: -7%;            
     background-color: blue;
-    top: -10px; ;
-    right: 0;
-    transition: width 0.3s ease-in-out;
+    top: -15px;
+    transition:transform 0.3s ease;
+    height: 5px;
+    transform:scaleX(0);
+    transform-origin:right;
+    }
+
+.activitess:hover::before {
+    width: 128%;
+    transform:scaleX(1)
 }
-.hebergementss:hover::before{ 
-    width: 57%;
-}
-.activitess:hover::before{ 
-    width: 45%;
-}
+
 h2.filter-title {
     font-size: 19px;
     padding-top: 20px;
@@ -303,6 +308,7 @@ ul.filters {
     gap: 8px;
     list-style: none;
     margin: 28px 0px 0px 0px;
+    padding: 0px;
 }   
 
 
@@ -427,9 +433,14 @@ li {padding-left: 0%;}
 .hebergements-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 27px;
-    padding: 11px;
-    margin-left: 4%;
+    gap: 19px;
+    padding: 34px;
+    margin-left: 1%;
+}
+
+.hebergements-cards a {
+    margin: 0px;
+    width: fit-content;
 }
 
 section.hebergements .card {
@@ -464,7 +475,7 @@ h2.section-titlemarseille {
     width: auto;
     margin-left: 87px;
 }
-div.hebergements-and-populaires h2.section-titlemarseille {margin-left: 6%;}
+div.hebergements-and-populaires h2.section-titlemarseille {margin-left: 5%;}
 
 
 p.card-subtitle span 
@@ -528,7 +539,7 @@ h2.section-title {
 
 i.fa-solid.fa-chart-line {
     width: fit-content;
-    margin-left: 34%;
+    margin-left: 41%;
     margin-top: 1%;
 }
 
@@ -590,7 +601,7 @@ header {
 
  footer {
     display: flex;
-    background-color:#F2F2F2;
+    background-color: #F2F2F2;
     margin-top: 12%;
     margin-left: 3%;
     margin-right: 24%;
