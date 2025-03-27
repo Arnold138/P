@@ -131,20 +131,28 @@ div.populaires-title h2 {
     .populaires {
         width: 100%;
         margin-top: 50px;
-    }
-
+        margin-bottom:20px;
+        padding-bottom:20px;
+        
+    } 
+    
     .populaires-cards {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        
     }
 
     .populaires-cards a {
-        width: 30%;
+        width: 100%;
     }
 
     .populaires-cards .card-title {
         font-size: 14px;
+        margin-right: 14%;
+        white-space: normal;
+        word-wrap: break-word;
+        width: 181px;
     }
 
     .populaires-cards .card-subtitle {
@@ -294,6 +302,7 @@ i.fas.fa-map-marker-alt {
 input#search {
     border: solid 1px #F2F2F2;
     padding: 15px 15px 15px 15px;
+    font-weight: bolder;
 } 
 
 h1 {margin: 35px 0px 0px 53px;font-size: 22px;}
@@ -710,7 +719,8 @@ footer li {
     section.hebergements,
     section.populaires {
       width: 100%;
-      margin-left: 0;
+      margin-left: 0px;
+        background-color:#F2F2F2;
     }
   
     .hebergements-cards {
@@ -722,22 +732,28 @@ footer li {
     }
     section.hebergements .card {
       width: 100%;
-    }
-  
+    } 
+
+       .populaires-title {
+           margin-left:0px;
+       }
+  .populaires {
+      padding-left:4%;
+  }
     .populaires-cards {
       display: flex;
-      flex-direction: column;
-      gap: 20px;
+      gap: 99px;
       width: 100%;
-      padding: 0;
+      padding: 0px;
     }
     .populaires-cards .card {
       width: 100%;
+      padding-right: 41%;
     }
   
     /* Activités */
     section.activitesamarseille {
-      flex-direction: column;
+      flex-direction: row;
       width: 100%;
       margin: 0;
       padding: 0;
@@ -745,10 +761,11 @@ footer li {
     .activites-cardsmarseille {
       width: 100%;
       margin-bottom: 20px;
+        padding-bottom:0px
     }
     .activites-cardsmarseille img {
       width: 100%;
-      height: auto;
+      height: 180px;
     }
   
     /* Footer */
@@ -765,8 +782,9 @@ footer li {
     }
   }
 
-  form input#search { 
+  form input#search {
     font-weight: bold;
     color: #000;
-    opacity: 1;
+    opacity: 21;
+    /* font-family: 'Poppins', sans-serif; */
 }
