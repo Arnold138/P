@@ -263,7 +263,7 @@ color:white;
 padding: 15px 35px 16px 15px;
 border: 1px;
 } 
-input::placeholder{ 
+form::placeholder{ 
     font-weight: bold;
 }
 
