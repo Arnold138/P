@@ -163,9 +163,16 @@ div.populaires-title h2 {
     
 .main-container{
     margin:0 auto; 
-    max-width:1400px;
-    width:auto;
-}
+    max-width:1440px;
+} 
+    section.hebergements {
+        
+        width:94% !important ;
+    } 
+    .h2.section-titlemarseille {
+        text-align:center;
+        padding-top:3% !important;
+    }
     .hebergements {
         background-color:#F2F2F2;
         padding:0;
@@ -204,22 +211,20 @@ div.populaires-title h2 {
     height: auto;
     object-fit: cover;  /* couvrir l’espace sans déformer */
   }
-
+}
 .populaires {
   display: flex;
-    width:100%;
+  width:96vw;
+  margin-top: 6%;
   flex-direction: column;
-  padding: 0px 0px;
-    margin:0auto;
   box-sizing: border-box;
   background-color:#F2F2F2;
 }
 
 .populaires-title {
-  margin: 0 0 20px 0;
-  text-align: left;
+  text-align: center;
   width: 100%;
-}
+} 
 
 .populaires-cards {
   display: flex;
@@ -227,6 +232,7 @@ div.populaires-title h2 {
   justify-content: space-between;
   gap: 20px;
   width: 100%;
+  margin-top:4%;
 }
 
 .populaires-cards .card {
@@ -239,18 +245,17 @@ div.populaires-title h2 {
     padding-right:1%;
     
 } .populaires-cards h3 {
-    font-size:16px
+    font-size:13px
 }
 .populaires-cards .card-txt {
-    font-size:13px;
+    font-size:12px;
   
 }
     .populaires-cards img {
-        width:33%
+        width:36%;
     
         
     } 
-
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     /* ... */
@@ -879,4 +884,3 @@ footer li {
     opacity: 21;
     /* font-family: 'Poppins', sans-serif; */
   }
-}
