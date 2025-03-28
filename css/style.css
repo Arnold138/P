@@ -120,45 +120,136 @@ div.populaires-title h2 {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
-    .hebergements-and-populaires {
-        flex-direction: column;
-    }
 
+    
+    nav {
+        display:flex;
+        flex-direction:column;
+        gap:5px;
+        padding:0px;
+        max-width:100%;
+    } 
+    .logo {
+        margin:0;
+        padding:0;
+    }
+    .nav-links {
+        display: flex;
+        margin:0;
+        padding:0px;
+    } 
+    .nav-links, .hebergementss, .activitess{
+        position:relative;
+        margin:0;
+        padding:0;
+    }
+    .hebergementss::before,.activitess::before{
+
+        content:"";
+        position:absolute;
+        height:2px;
+        background-color:#0065FC;
+        left:0;
+        right:0;
+        top:0;
+        transform:scaleX(0);
+        transform-origin:center;
+        transition:transform 0.3s ease-in-out;
+    }
+        .hebergementss:hover::before,.activitess:hover::before {
+
+            transform:scaleX(1);
+        }
+    
+.main-container{
+    margin:0 auto; 
+    max-width:1400px;
+    width:auto;
+}
     .hebergements {
-        width: 100%;
+        background-color:#F2F2F2;
+        padding:0;
+        margin: 0 auto;
     }
+    .hebergements-cards {
+        justify-content:center;
+    /* Deux colonnes au lieu de trois */
+    grid-template-columns: repeat(2, 1fr);
+    /* Ajuster éventuellement le gap si besoin (exemple : 1.5rem) */
+    gap: 1.5rem;
+    /* (Optionnel) Réduire le padding du conteneur s’il était trop large */
+    padding: 0 auto;
+        margin:0 auto;
+  }
+  .hebergements-cards .card {
+    /* Annule la largeur en vw et laisse la card s'adapter à la colonne */
+    width: auto;
+    max-width: 180px;
+    /* Hauteur automatique pour laisser le contenu définir la taille */
+    height: auto;
+    /* Padding interne réduit pour une card plus compacte */
+    padding: 1rem;
+  }
+  /* Ajustement des textes à l’intérieur de la card */
+  .hebergements-cards .card h3 {
+    font-size: 1.rem;  /* titre un peu plus petit sur tablette */
+  }
+  .hebergements-cards .card p {
+    font-size: 1rem;/* texte descriptif/prix plus discret */ 
+  }
+  /* Image de la card occupant toute la largeur de la card, hauteur auto */
+  .hebergements-cards .card img {
+    width: 100%;
+    max-width:180px;
+    height: auto;
+    object-fit: cover;  /* couvrir l’espace sans déformer */
+  }
 
-    .populaires {
-        width: 100%;
-        margin-top: 50px;
-        margin-bottom:20px;
-        padding-bottom:20px;
+.populaires {
+  display: flex;
+    width:100%;
+  flex-direction: column;
+  padding: 0px 0px;
+    margin:0auto;
+  box-sizing: border-box;
+  background-color:#F2F2F2;
+}
+
+.populaires-title {
+  margin: 0 0 20px 0;
+  text-align: left;
+  width: 100%;
+}
+
+.populaires-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+}
+
+.populaires-cards .card {
+  width: 28vw;
+    min-width:180px;
+    max-width:250px;
+    height:auto;
+    margin: 0;
+    padding:3px;
+    padding-right:1%;
+    
+} .populaires-cards h3 {
+    font-size:16px
+}
+.populaires-cards .card-txt {
+    font-size:13px;
+  
+}
+    .populaires-cards img {
+        width:33%
+    
         
     } 
-    
-    .populaires-cards {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        
-    }
-
-    .populaires-cards a {
-        width: 100%;
-    }
-
-    .populaires-cards .card-title {
-        font-size: 14px;
-        margin-right: 14%;
-        white-space: normal;
-        word-wrap: break-word;
-        width: 181px;
-    }
-
-    .populaires-cards .card-subtitle {
-        font-size: 13px;
-    }
-}
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
@@ -528,7 +619,7 @@ p.card-subtitle {
     margin-top: AUTO;
 } 
 
-section.populaires {
+ section.populaires {
     width: 30%;
 } 
 
@@ -787,4 +878,5 @@ footer li {
     color: #000;
     opacity: 21;
     /* font-family: 'Poppins', sans-serif; */
+  }
 }
