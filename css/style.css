@@ -114,6 +114,154 @@ div.populaires-title h2 {
 
 
 
+
+/* Le code ci-dessous correspond à la version responsive uniquement */
+
+/****** Media queries ***********/
+/* Medium devices (tablets, less/equal than 1024px) */
+@media (max-width: 1024px) {
+
+    
+    nav {
+        display:flex;
+        flex-direction:column;
+        gap:5px;
+        padding:0px;
+        max-width:100%;
+    } 
+    .logo {
+        margin:0;
+        padding:0;
+    }
+    .nav-links {
+        display: flex;
+        margin:0;
+        padding:0px;
+    } 
+    .nav-links, .hebergementss, .activitess{
+        position:relative;
+        margin:0;
+        padding:0;
+    }
+    .hebergementss::before,.activitess::before{
+
+        content:"";
+        position:absolute;
+        height:2px;
+        background-color:#0065FC;
+        left:0;
+        right:0;
+        top:0;
+        transform:scaleX(0);
+        transform-origin:center;
+        transition:transform 0.3s ease-in-out;
+    }
+        .hebergementss:hover::before,.activitess:hover::before {
+
+            transform:scaleX(1);
+        }
+    
+.main-container{
+    margin:0 auto; 
+    max-width:1440px;
+} 
+    section.hebergements {
+        
+        width:94% !important ;
+    } 
+    .h2.section-titlemarseille {
+        text-align:center;
+        padding-top:3% !important;
+    }
+    .hebergements {
+        background-color:#F2F2F2;
+        padding:0;
+        margin: 0 auto;
+    }
+    .hebergements-cards {
+        justify-content:center;
+    /* Deux colonnes au lieu de trois */
+    grid-template-columns: repeat(2, 1fr);
+    /* Ajuster éventuellement le gap si besoin (exemple : 1.5rem) */
+    gap: 1.5rem;
+    /* (Optionnel) Réduire le padding du conteneur s’il était trop large */
+    padding: 0 auto;
+        margin:0 auto;
+  }
+  .hebergements-cards .card {
+    /* Annule la largeur en vw et laisse la card s'adapter à la colonne */
+    width: auto;
+    max-width: 180px;
+    /* Hauteur automatique pour laisser le contenu définir la taille */
+    height: auto;
+    /* Padding interne réduit pour une card plus compacte */
+    padding: 1rem;
+  }
+  /* Ajustement des textes à l’intérieur de la card */
+  .hebergements-cards .card h3 {
+    font-size: 1.rem;  /* titre un peu plus petit sur tablette */
+  }
+  .hebergements-cards .card p {
+    font-size: 1rem;/* texte descriptif/prix plus discret */ 
+  }
+  /* Image de la card occupant toute la largeur de la card, hauteur auto */
+  .hebergements-cards .card img {
+    width: 100%;
+    max-width:180px;
+    height: auto;
+    object-fit: cover;  /* couvrir l’espace sans déformer */
+  }
+}
+.populaires {
+  display: flex;
+  width:96vw;
+  margin-top: 6%;
+  flex-direction: column;
+  box-sizing: border-box;
+  background-color:#F2F2F2;
+}
+
+.populaires-title {
+  text-align: center;
+  width: 100%;
+} 
+
+.populaires-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  margin-top:4%;
+}
+
+.populaires-cards .card {
+  width: 28vw;
+    min-width:180px;
+    max-width:250px;
+    height:auto;
+    margin: 0;
+    padding:3px;
+    padding-right:1%;
+    
+} .populaires-cards h3 {
+    font-size:13px
+}
+.populaires-cards .card-txt {
+    font-size:12px;
+  
+}
+    .populaires-cards img {
+        width:36%;
+    
+        
+    } 
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+    /* ... */
+} 
+
+
 /* à partir de la je prend la main */
 
 nav {
@@ -588,262 +736,147 @@ footer li {
     text-align: center;
 } 
 
-  form input#search {
-    font-weight: bold;
-    color: #000;
-    opacity: 21;
-    /* font-family: 'Poppins', sans-serif; */
-  } 
-
-  /* 
+/* 
    RESPONSIVE MOBILE (max-width: 768px)
     */
 
-    @media screen and (max-width: 768px) {
-        /* Conteneur principal */
-        .main-container {
-          padding: 0 5%;
-          box-sizing: border-box;
-        }
-      
-        /* Header */
-        nav {
-          flex-direction: column;
-          align-items: center;
-        }
-        .nav-links {
-          width: 100%;
-          margin: 0;
-          padding: 0;
-          justify-content: space-around;
-          position: static;
-        }
-      
-        .logo {
-          margin: 5% auto;
-        }
-      
-        /* Barre de recherche */
-        form {
-          flex-direction: row;
-          margin: 0 0 20px 0;
-          justify-content: center;
-        }
-        .search-text {
-          display: none;
-        }
-        .search-icon {
-          display: inline-block;
-          font-size: 18px;
-        }
-      
-        /* TITRE "Filtres" */
-        .filter-title {
-          display: block;
-          width: 100%;
-          font-weight: bold;
-          font-size: 18px;
-          margin: 5% 0 2% 0;
-        }
-      
-        /* Filtres */
-        .filters {
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: space-between;
-          gap: 3% 4%;
-        }
-        .filters li {
-          width: 48%;
-          margin-bottom: 4%;
-        }
-        .filters button {
-          width: 100%;
-          padding: 10px;
-          font-size: 1rem;
-          box-sizing: border-box;
-          justify-content: center;
-          gap: 5px;
-        } 
-        .search-text, strong {
-            display: none; /* Cache le texte */
-        }
-        .search-icon {
-            display: inline-block; /* Affiche la loupe*/
-            font-size: 18px;
-        }
-       .search-text {
-        display: none;
-       }
-      
-        /* Section hébergements/populaires */
-        .hebergements-and-populaires {
-          flex-direction: column;
-        }
-      
-        section.hebergements,
-        section.populaires {
-          width: 100%;
-          margin-left: 0px;
-            background-color:#F2F2F2;
-        }
-      
-        .hebergements-cards {
-          display: grid;
-          grid-template-columns: 1fr;
-          gap: 20px;
-          padding: 0;
-          margin: 5% 0;
-        }
-        section.hebergements .card {
-          width: 100%;
-        } 
-    
-           .populaires-title {
-               margin-left:0px;
-           }
-      .populaires {
-          padding-left:4%;
-      }
-        .populaires-cards {
-          display: flex;
-          gap: 99px;
-          width: 100%;
-          padding: 0px;
-        }
-        .populaires-cards .card {
-          width: 100%;
-          padding-right: 41%;
-        }
-      
-        /* Activités */
-        section.activitesamarseille {
-          flex-direction: row;
-          width: 100%;
-          margin: 0;
-          padding: 0;
-        }
-        .activites-cardsmarseille {
-          width: 100%;
-          margin-bottom: 20px;
-            padding-bottom:0px
-        }
-        .activites-cardsmarseille img {
-          width: 100%;
-          height: 180px;
-        }
-      
-        /* Footer */
-        footer {
-          flex-direction: column;
-          gap: 20px;
-          padding: 5%;
-          margin: 0;
-        }
-        .footer-container {
-          width: 100%;
-          margin: 0;
-          text-align: left;
-        } 
-      }
-/* Le code ci-dessous correspond à la version responsive uniquement */
-
-/****** Media queries ***********/
-/* Medium devices (tablets, less/equal than 1024px) */
-@media (max-width: 1024px) {
-
-    
+   @media screen and (max-width: 768px) {
+    /* Conteneur principal */
+    .main-container {
+      padding: 0 5%;
+      box-sizing: border-box;
+    }
+  
+    /* Header */
     nav {
-        display:flex;
-        flex-direction:column;
-        gap:5px;
-        padding:0px;
-        max-width:100%;
-    } 
-    .logo {
-        margin:0;
-        padding:0;
+      flex-direction: column;
+      align-items: center;
     }
     .nav-links {
-        display: flex;
-        margin:0;
-        padding:0px;
-    } 
-    .nav-links, .hebergementss, .activitess{
-        position:relative;
-        margin:0;
-        padding:0;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      justify-content: space-around;
+      position: static;
     }
-    .hebergementss::before,.activitess::before{
-
-        content:"";
-        position:absolute;
-        height:2px;
-        background-color:#0065FC;
-        left:0;
-        right:0;
-        top:0;
-        transform:scaleX(0);
-        transform-origin:center;
-        transition:transform 0.3s ease-in-out;
+  
+    .logo {
+      margin: 5% auto;
     }
-        .hebergementss:hover::before,.activitess:hover::before {
-
-            transform:scaleX(1);
-        }
-    
-.main-container{
-    margin:0 auto; 
-    max-width:1440px;
-} 
-    section.hebergements {
-        
-        width:94% !important ;
-    } 
-    .h2.section-titlemarseille {
-        text-align:center;
-        padding-top:3% !important;
+  
+    /* Barre de recherche */
+    form {
+      flex-direction: row;
+      margin: 0 0 20px 0;
+      justify-content: center;
     }
-    .hebergements {
+    .search-text {
+      display: none;
+    }
+    .search-icon {
+      display: inline-block;
+      font-size: 18px;
+    }
+  
+    /* TITRE "Filtres" */
+    .filter-title {
+      display: block;
+      width: 100%;
+      font-weight: bold;
+      font-size: 18px;
+      margin: 5% 0 2% 0;
+    }
+  
+    /* Filtres */
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 3% 4%;
+    }
+    .filters li {
+      width: 48%;
+      margin-bottom: 4%;
+    }
+    .filters button {
+      width: 100%;
+      padding: 10px;
+      font-size: 1rem;
+      box-sizing: border-box;
+      justify-content: center;
+      gap: 5px;
+    }
+  
+    /* Section hébergements/populaires */
+    .hebergements-and-populaires {
+      flex-direction: column;
+    }
+  
+    section.hebergements,
+    section.populaires {
+      width: 100%;
+      margin-left: 0px;
         background-color:#F2F2F2;
-        padding:0;
-        margin: 0 auto;
     }
+  
     .hebergements-cards {
-        justify-content:center;
-    /* Deux colonnes au lieu de trois */
-    grid-template-columns: repeat(2, 1fr);
-    /* Ajuster éventuellement le gap si besoin (exemple : 1.5rem) */
-    gap: 1.5rem;
-    /* (Optionnel) Réduire le padding du conteneur s’il était trop large */
-    padding: 0 auto;
-        margin:0 auto;
-  }
-  .hebergements-cards .card {
-    /* Annule la largeur en vw et laisse la card s'adapter à la colonne */
-    width: auto;
-    max-width: 180px;
-    /* Hauteur automatique pour laisser le contenu définir la taille */
-    height: auto;
-    /* Padding interne réduit pour une card plus compacte */
-    padding: 1rem;
-  }
-  /* Ajustement des textes à l’intérieur de la card */
-  .hebergements-cards .card h3 {
-    font-size: 1.rem;  /* titre un peu plus petit sur tablette */
-  }
-  .hebergements-cards .card p {
-    font-size: 1rem;/* texte descriptif/prix plus discret */ 
-  }
-  /* Image de la card occupant toute la largeur de la card, hauteur auto */
-  .hebergements-cards .card img {
-    width: 100%;
-    max-width:180px;
-    height: auto;
-    object-fit: cover;  /* couvrir l’espace sans déformer */
-  }
-}
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      padding: 0;
+      margin: 5% 0;
+    }
+    section.hebergements .card {
+      width: 100%;
+    } 
 
+       .populaires-title {
+           margin-left:0px;
+       }
+  .populaires {
+      padding-left:4%;
+  }
+    .populaires-cards {
+      display: flex;
+      gap: 99px;
+      width: 100%;
+      padding: 0px;
+    }
+    .populaires-cards .card {
+      width: 100%;
+      padding-right: 41%;
+    }
+  
+    /* Activités */
+    section.activitesamarseille {
+      flex-direction: row;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    .activites-cardsmarseille {
+      width: 100%;
+      margin-bottom: 20px;
+        padding-bottom:0px
+    }
+    .activites-cardsmarseille img {
+      width: 100%;
+      height: 180px;
+    }
+  
+    /* Footer */
+    footer {
+      flex-direction: column;
+      gap: 20px;
+      padding: 5%;
+      margin: 0;
+    }
+    .footer-container {
+      width: 100%;
+      margin: 0;
+      text-align: left;
+    }
+  }
 
   form input#search {
     font-weight: bold;
