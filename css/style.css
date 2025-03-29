@@ -66,6 +66,7 @@ a {
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
+    gap: 30px;
 }
 .hebergements-and-populaires section {
     background-color: var(--main-bg-color);
