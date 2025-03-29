@@ -120,69 +120,132 @@ div.populaires-title h2 {
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
-    .hebergements-and-populaires {
-        flex-direction: column;
-    }
 
-    .hebergements {
-        width: 100%!important;
-    } 
-.hebergements-cards {
-    justify-content:center;
-}
     
-
-    .populaires {
-        width: 100% !important;
-        margin-top: 50px;
-        margin-left:1%;
-        margin-bottom:20px;
-        padding-bottom:20px;
-        padding:0% 1% 0%;
-    }  
-   
-
-    .populaires-cards {
+    nav {
+        display:flex;
+        flex-direction:column;
+        gap:5px;
+        padding:0px;
+        max-width:100%;
+    } 
+    .logo {
+        margin:0;
+        padding:0;
+    }
+    .nav-links {
         display: flex;
-        width:96%!important;
-        flex-direction: row;
-        padding:0% 2%;        
-        gap:20px;
-        padding-left:2% !important;
-        
+        margin:0;
+        padding:0px;
     } 
+    .nav-links, .hebergementss, .activitess{
+        position:relative;
+        margin:0;
+        padding:0;
+    }
+    .hebergementss::before,.activitess::before{
+
+        content:"";
+        position:absolute;
+        height:2px;
+        background-color:#0065FC;
+        left:0;
+        right:0;
+        top:0;
+        transform:scaleX(0);
+        transform-origin:center;
+        transition:transform 0.3s ease-in-out;
+    }
+        .hebergementss:hover::before,.activitess:hover::before {
+
+            transform:scaleX(1);
+        }
     
-    .populaires-cards a {
-        width: 100%;
-    }
-
-    .populaires-cards img {
-
-        width:10vw;
-    }
-    .populaires-cards .card-title {
-        font-size:13px;
-        width:17Vw;
+.main-container{
+    margin:0 auto; 
+    max-width:1440px;
+} 
+    section.hebergements {
         
-       
-    }
-
-    .populaires-cards .card-subtitle {
-        font-size: 13px;
-        white-space:nowrap
+        width:94% !important ;
     } 
-
-    section.activitesamarseille img {
-            width:23vw;
-            height:25vw;
-    } 
-    section.activitesamarseille H3 {
-        font-size: 16px;
-        height:100%;
-        padding-left:8%;
+    .h2.section-titlemarseille {
+        text-align:center;
+        padding-top:3% !important;
     }
+    .hebergements {
+        background-color:#F2F2F2;
+        padding:0;
+        margin: 0 auto;
+    }
+    .hebergements-cards {
+        justify-content:center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    padding: 0 auto;
+        margin:0 auto;
+  }
+  .hebergements-cards .card {
+    width: auto;
+    max-width: 180px;
+    height: auto;
+    padding: 1rem;
+  }
+  .hebergements-cards .card h3 {
+    font-size: 1.rem; 
+  }
+  .hebergements-cards .card p {
+    font-size: 1rem;
+  }
+  .hebergements-cards .card img {
+    width: 100%;
+    max-width:180px;
+    height: auto;
+    object-fit: cover;
+  }
+.populaires {
+  display: flex;
+  width:96vw;
+  margin-top: 6%;
+  flex-direction: column;
+  box-sizing: border-box;
+  background-color:#F2F2F2;
 }
+.populaires-title {
+  text-align: center;
+  width: 100%;
+} 
+.populaires-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  margin-top:4%;
+}
+.populaires-cards .card {
+  width: 28vw;
+    min-width:180px;
+    max-width:250px;
+    height:auto;
+    margin: 0;
+    padding:3px;
+    padding-right:1%;
+    
+} .populaires-cards h3 {
+    font-size:13px
+}
+  .populaires-cards .card-txt {
+    font-size:12px;
+  
+}
+    .populaires-cards img {
+        width:36%;
+    
+        
+    } }
 
+    
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     /* ... */
@@ -551,8 +614,8 @@ p.card-subtitle {
     margin-top: AUTO;
 } 
 
-section.populaires {
-    width: 30%;
+ section.populaires {
+    width: 33%;
 } 
 
 
@@ -810,4 +873,4 @@ footer li {
     color: #000;
     opacity: 21;
     /* font-family: 'Poppins', sans-serif; */
-}
+  }
