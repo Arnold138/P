@@ -655,17 +655,24 @@ footer li {
         margin-top:0%!important;
         margin-bottom:3%!important;
         text-align:center!important;
+        gap:2%;
+    } h2.filter-title {
+        margin-top:0%;
+        padding-top:1%;
     }
     ul.filters button {
-        width:16vw;
+        width:15vw;
         display:flex;
-        text-align:center!important;
+        justify-content:center!important;
         font-size:15px;
-        padding-left:16%;
+        padding-left:10%;
         gap:2%;
     }
     ul.filters li {
         text-align:center!important;
+    }
+    ul.filters i {
+        font-size:1.8vw;
     }
     .main-container{
         margin:0 auto; 
@@ -679,9 +686,8 @@ footer li {
         width:100% !important ;
         margin-left:1%;
     } 
-    .h2.section-titlemarseille {
-        text-align:center;
-        padding-top:3% !important;
+    div.hebergements-and-populaires h2.section-titlemarseille {
+        margin-left:3%!important;
     }
     .hebergements {
         background-color:#F2F2F2;
@@ -814,7 +820,7 @@ footer li {
     } 
     footer {
         display:flex;
-        width:97%;
+        width:99%;
         margin-left:5%!important;
     } 
     footer H3 {
