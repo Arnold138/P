@@ -579,7 +579,9 @@ footer li {
     color: #000;
     opacity: 21;
   } 
- /* Le code ci-dessous correspond à la version responsive uniquement */
+ 
+
+/* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
@@ -588,43 +590,56 @@ footer li {
     
     nav {
         display:flex;
-        flex-direction:column;
         gap:5px;
         padding:0px;
         max-width:100%;
     } 
     .logo {
-        margin:0;
         padding:0;
     }
     .nav-links {
-        display: flex;
         margin:0;
-        padding:0px;
+        padding:0%;
+        padding-top:0%!important;
     } 
     .nav-links, .hebergementss, .activitess{
-
-        margin:0;
-        padding:0;
+        margin:0!important;
+        padding:0%!important;
+        
     }
-    .hebergementss::before,.activitess::before{
+   .hebergementss::before, .activitess::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: #0065FC;
+    width:99%!important;
+    left: 0;
+    right: 0;
+    top: -6px;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease-in-out;
+}
 
-        content:"";
-        position:absolute;
-        height:2px;
-        background-color:#0065FC;
-        left:0;
-        right:0;
-        top:0;
-        transform:scaleX(0);
-        transform-origin:center;
-        transition:transform 0.3s ease-in-out;
-    }
-        .hebergementss:hover::before,.activitess:hover::before {
+/* Effet au survol (desktop) */
+.hebergementss:hover::before, .activitess:hover::before {
+    transform: scaleX(1);
+}
 
-            transform:scaleX(1);
-        } 
+/* Effet au clic (mobile & tablette) */
+.hebergementss:active::before, .activitess:active::before {
+    transform: scaleX(1);
+}
 
+/* Désactivation après le clic pour éviter le blocage */
+.hebergementss:focus::before, .activitess:focus::before {
+    transform: scaleX(0);
+}
+
+/* Empêcher l'appui long de garder l'effet sur mobile */
+.hebergementss, .activitess {
+    touch-action: manipulation;
+}
         header {
             margin-left:1%;
         }
@@ -635,11 +650,23 @@ footer li {
     } 
 
     ul.filters {
+        width:100%;
         margin-left:4.5%!important;
         margin-top:0%!important;
         margin-bottom:3%!important;
+        text-align:center!important;
     }
-    
+    ul.filters button {
+        width:16vw;
+        display:flex;
+        text-align:center!important;
+        font-size:15px;
+        padding-left:16%;
+        gap:2%;
+    }
+    ul.filters li {
+        text-align:center!important;
+    }
     .main-container{
         margin:0 auto; 
         flex-direction:column;
@@ -650,6 +677,7 @@ footer li {
 }
     section.hebergements {
         width:100% !important ;
+        margin-left:1%;
     } 
     .h2.section-titlemarseille {
         text-align:center;
@@ -662,9 +690,8 @@ footer li {
     }
     .hebergements-cards {
        margin-left:0%!important;
-       padding-left:2vw!important;
-       justify-content:center;
-       grid-template-columns: repeat(2, 1fr);
+       padding-left:3vw!important;
+       grid-template-columns: repeat(0, 1fr);
        gap: 1.5rem;
        padding: 0 auto;
        margin:0 auto;
@@ -691,34 +718,38 @@ footer li {
     object-fit: cover;
   } 
     .afficher-plustitle {
-    display:inline-block;
-    border:1px solid red;
+    display:block;
     text-align:left;
-    margin-left:0%!important;
-    padding-left:0%!important;
-    width:auto;
+    margin:0%!important;
+    padding-bottom:2%!important;
+    width:fit-content;
     line-height:1!important;
     }
 .populaires {
   display: flex;
   width:100%!important;
   margin-top: 5%;
-  margin-left:2.5%;
+  margin-left:1%;
   margin-bottom:6%;
   flex-direction: column;
   box-sizing: border-box;
   background-color:#F2F2F2;
 } 
 .populaires-title {
-  margin-left:1vw!important;
+  margin-left:2vw!important;
   text-align: center;
   width: 100%;
   padding:5px;
-} 
+}  
+ i.fa-solid.fa-chart-line {
+    display:flex!important; 
+}
+
+    
 .populaires-cards {
   display: flex;
   flex-direction: row;
-  padding-left:2%!important;
+  padding-left:3%!important;
   align-items:start;
   gap: 40px;
   width: 100%;
@@ -748,12 +779,12 @@ footer li {
     
         
     } section.activitesamarseille  {
-        margin-left:5%!important;
+        margin-left:4%!important;
         margin-top:5%;
 
     } 
     h2.section-titlemarseille {
-        margin-left:7% !important;
+        margin-left:6% !important;
     } 
 
     section.activitesamarseille {
@@ -771,7 +802,7 @@ footer li {
     }
     section.activitesamarseille .card-contentmarseille {
         margin-top:1em!important;
-        margin-left:1.3em;
+        margin-left:1em;
         margin-bottom:2.3em;
         padding-top:0em !important;
         font-size:1.7vw;
