@@ -25,7 +25,6 @@ body {
 .main-container {
     width: 100%;
     max-width: 1400px;
-    /* box-sizing: border-box; */
     /* margin: 0 auto; */
     /* padding: 30px; */
 }
@@ -65,8 +64,9 @@ a {
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
-    justify-content: space-between;
     gap: 30px;
+    height: 575px;
+    margin-bottom: 9%;
 }
 .hebergements-and-populaires section {
     background-color: var(--main-bg-color);
@@ -82,27 +82,31 @@ div.populaires-title h2 {
     display: flex;
     margin-top: 27px;
     width: 100%;
+    padding-right: 4%;
 }
 
 .populaires-cards img {
-    width: 43%;
+    width: 37%;
     height: 124px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+    object-fit: cover;
 }
 
 .populaires-cards .card-content {
-    width: 56%;
+    width: 60%;
     padding-left: 9px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
+    font-size: 15px;
 }
 
 .populaires-cards .card-title {
-    margin-top: 10px;
+    margin-top: 5px;
     margin-bottom: 4px;
+    font-size: 14.6px;
 }
 
 .populaires-cards .card-subtitle {
@@ -205,18 +209,10 @@ li {
 } 
 form {
     display: flex;
-    margin: 0px 0px 25px 25px;
+    margin: 0px 0px 25px 24px;
 }
 
-.recherche-button button  {
-
-border-top-right-radius: 15px;
-border-bottom-right-radius:15px;
-background:#0065FC;
-color:white;
-padding: 15px 35px 16px 15px;
-border: 1px;
-} 
+.recherche-button button  {border-top-right-radius: 15px;border-bottom-right-radius:15px;background:#0065FC;color:white;padding: 15px 15px 13px 15px;border: 1px;} 
 
 
 .search-icon, .search-text {
@@ -230,7 +226,7 @@ i.fas.fa-map-marker-alt {
     background: #F2F2F2;
     border: 1px #F2F2F2;
     margin: 0px 0px 0px 30px;
-    padding: 15px 25px 15px 25px;
+    padding: 14px 20px 15px 20px;
 } 
 input#search {
     border: solid 1px #F2F2F2;
@@ -253,6 +249,13 @@ ul.filters {
     list-style: none;
     margin: 28px 0px 0px 0px;
     padding: 0px;
+}
+
+ul.filters button {
+    width: 150px;
+    justify-content: center;
+    font-size: 15px;
+    padding-left: 17px;
 }   
 
 
@@ -286,7 +289,7 @@ i.fas.fa-solid.fa-money-bill-wave {
 
 .filter-header {
     margin-bottom: 25px;
-    margin-left: 10px;
+    margin-left: 0px;
     display: flex;
 }
 
@@ -340,7 +343,7 @@ i.fa-solid.fa-info {
 
 p.soustitress {
     font-size: 16px;
-    margin-left: 59px;
+    margin-left: 47px;
 }  
 
 h2.afficher-plus {
@@ -364,7 +367,9 @@ i.fa-solid.fa-money-bill-wave {
 
 button.Familial {
     padding: 10px 19px 11px 19px;
-    gap: 2%;}
+    gap: 2%;
+    width: 129px!important;
+    }
 
 li {padding-left: 0%;}
 
@@ -377,9 +382,10 @@ li {padding-left: 0%;}
 .hebergements-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 19px;
-    padding: 34px;
-    margin-left: 1%;
+    gap: 30px;
+    padding: 20px;
+    margin-left: 2%;
+    width: 83%;
 }
 
 .hebergements-cards a {
@@ -397,7 +403,7 @@ section.hebergements .card {
     padding-left: 6px;
     padding-right: 5px;
     /* width: fit-content; */
-    width: 220px;
+    width: 240px;
     height: 150px;
 }
 section.hebergements .card img {
@@ -408,7 +414,7 @@ section.hebergements .card img {
     border-top-right-radius: 20px;
 } 
 section.hebergements {
-    width: 65%;
+    width: 63%;
     margin-left: 3%;
     padding-left: 0px;
     padding-top: 0%;
@@ -464,7 +470,7 @@ p.card-subtitle {
 } 
 
  section.populaires {
-    width: 33%;
+    width: 28%;
 } 
 
 
@@ -485,8 +491,8 @@ h2.section-title {
 
 i.fa-solid.fa-chart-line {
     width: fit-content;
-    margin-left: 41%;
-    margin-top: 1%;
+    margin-left: 31%;
+    margin-top: 4%;
 }
 
 .populaires-cards {
@@ -502,7 +508,7 @@ section.activitesamarseille {
     width: 100%;
     gap: 0px;
     margin-top: 3%;
-    margin-left: 1%;
+    margin-left: 3%;
 }
 
 .cardsmarseille img {
@@ -537,7 +543,6 @@ section.activitesamarseille {
 
 .afficher-plustitle {
     margin-left: 2%;
-    padding-bottom: 2%;
 }
 
 header {
@@ -547,6 +552,7 @@ header {
 
  footer {
     display: flex;
+    width: 85%;
     background-color: #F2F2F2;
     margin-top: 12%;
     margin-left: 2%;
@@ -578,10 +584,9 @@ footer li {
     font-weight: bold;
     color: #000;
     opacity: 21;
+    padding-bottom: 12px;
   } 
- 
-
-/* Le code ci-dessous correspond à la version responsive uniquement */
+ /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
