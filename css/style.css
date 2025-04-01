@@ -19,13 +19,14 @@ html {
 }
 
 body {
-    justify-content: center;
+    max-width: 1440px;
 }
 
 .main-container {
     width: 100%;
     max-width: 1400px;
-    
+    /* margin: 0 auto; */
+    /* padding: 30px; */
 }
 
 a {
@@ -115,10 +116,11 @@ div.populaires-title h2 {
 .populaires-cards .card-rating {
     margin-bottom: 5px;
 }
+/* à partir de la je prend la main */
 
 nav {
     display: flex;
-    width: 100%;
+    width: 96%;
     max-width: 1440px;
     justify-content: space-between;
 }
@@ -140,6 +142,7 @@ nav {
 }
 .hebergementss {
     display: inline-block;
+    /* padding-bottom: 5px; */
     transition: color 0.3s ease-in-out;
     width: fit-content;
     position: relative;
@@ -213,7 +216,7 @@ form {
 
 
 .search-icon, .search-text {
-    display: none;
+    display: none; /* Cache la loupe */
 
 }
 
@@ -399,6 +402,7 @@ section.hebergements .card {
     padding-top: 4px;
     padding-left: 6px;
     padding-right: 5px;
+    /* width: fit-content; */
     width: 240px;
     height: 150px;
 }
@@ -427,7 +431,7 @@ div.hebergements-and-populaires h2.section-titlemarseille {
 
 
 p.card-subtitle span 
-{   margin: 0px;
+{margin: 0px;
     padding: 0%;
 }
 
@@ -462,7 +466,7 @@ p.card-subtitle {
 
 .populaires-cards p.card-subtitle {
     padding-left: 0%;
-    margin-top: auto;
+    margin-top: AUTO;
 } 
 
  section.populaires {
@@ -479,6 +483,7 @@ h2.section-title {
     margin-left: 5%;
     margin-bottom: 0%;
     padding-bottom: 0%;
+    /* width: fit-content; */
     display: flex;
     margin-top: 3%;
     white-space: nowrap;
@@ -507,7 +512,7 @@ section.activitesamarseille {
 }
 
 .cardsmarseille img {
-    width: 360px;
+    width: 360px; /* la pas de classe à la base  */
 }
 
 .activites-cardsmarseille img {
@@ -542,12 +547,13 @@ section.activitesamarseille {
 
 header {
     margin-bottom: 40px;
+    max-width: 1440px;
 }
  /* a partir de la on insere le footer */
 
  footer {
     display: flex;
-    width: 85%;
+    width: 96%;
     background-color: #F2F2F2;
     margin-top: 12%;
     margin-left: 2%;
@@ -621,22 +627,22 @@ footer li {
     transition: transform 0.3s ease-in-out;
 }
 
-
+/* Effet au survol (desktop) */
 .hebergementss:hover::before, .activitess:hover::before {
     transform: scaleX(1);
 }
 
-
+/* Effet au clic (mobile & tablette) */
 .hebergementss:active::before, .activitess:active::before {
     transform: scaleX(1);
 }
 
-
+/* Désactivation après le clic pour éviter le blocage */
 .hebergementss:focus::before, .activitess:focus::before {
     transform: scaleX(0);
 }
 
-
+/* Empêcher l'appui long de garder l'effet sur mobile */
 .hebergementss, .activitess {
     touch-action: manipulation;
 }
@@ -846,13 +852,13 @@ footer li {
     */
 
     @media screen and (max-width: 768px) {
-       
+        /* Conteneur principal */
         .main-container {
           padding: 0 5%;
           box-sizing: border-box;
         }
       
-      
+        /* Header */
         nav {
           flex-direction: column;
           align-items: center;
@@ -878,7 +884,7 @@ footer li {
        .search-text {
         display: none;
        }
-    
+        /* Barre de recherche */
         form {
           flex-direction: row;
           margin: 0 0 20px 0;
@@ -892,7 +898,7 @@ footer li {
           font-size: 18px;
         }
       
-        
+        /* TITRE "Filtres" */
         .filter-title {
           display: block;
           width: 100%;
@@ -901,7 +907,7 @@ footer li {
           margin: 5% 0 2% 0;
         }
       
-        
+        /* Filtres */
         .filters {
           display: flex;
           flex-wrap: wrap;
@@ -921,7 +927,7 @@ footer li {
           gap: 5px;
         }
       
-       
+        /* Section hébergements/populaires */
         .hebergements-and-populaires {
           flex-direction: column;
         }
@@ -961,7 +967,7 @@ footer li {
           padding-right: 41%;
         }
       
-        
+        /* Activités */
         section.activitesamarseille {
           flex-direction: row;
           width: 100%;
@@ -978,7 +984,7 @@ footer li {
           height: 180px;
         }
       
-      
+        /* Footer */
         footer {
           flex-direction: column;
           gap: 20px;
