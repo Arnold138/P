@@ -692,12 +692,10 @@ footer li {
         font-size:1.7vw;
     }
     .main-container{
-        margin:0 auto; 
         flex-direction:column;
 }      
     .hebergements-and-populaires {
         flex-direction:column;
-        margin-left:2%;
         height:auto;
         width:100%;
 }
@@ -710,7 +708,7 @@ footer li {
     .hebergements {
         background-color:#F2F2F2;
         padding:0;
-        margin-left:0%!important;
+        margin-left:7%!important;
     }
     .hebergements-cards {
        margin-left:0%!important;
@@ -742,19 +740,14 @@ footer li {
     object-fit: cover;
   } 
     .afficher-plustitle {
-    display:block;
-    text-align:left;
-    margin:0%!important;
-    padding-bottom:2%!important;
-    width:fit-content;
-    line-height:1!important;
+          display:flex;
     }
 .populaires {
   display: flex;
   width:96%!important;
   max-width:1024px;
   margin-top: 5%;
-  margin-left:0%;
+  margin-left:7%;
   margin-bottom:0%;
   flex-direction: column;
   box-sizing: border-box;
@@ -764,10 +757,12 @@ footer li {
   margin-left:2vw!important;
   text-align: center;
   width: 100%;
-  padding:5px;
+  padding:0px;
 }  
  i.fa-solid.fa-chart-line {
-    display:flex!important; 
+    display:flex!important;
+    align-items:flex-end!important;
+    margin-left:63%!important;
 }
 
     
@@ -776,9 +771,9 @@ footer li {
   flex-direction: row;
   padding-left:3%!important;
   align-items:start;
-  gap: 40px;
+  gap: 30px;
   width: 100%;
-  margin-top:4%;
+  margin-top:2%;
 }
 .populaires-cards .card {
     width:26vw;
@@ -805,12 +800,13 @@ footer li {
         
     } 
     .section-titlemarseille {
-        margin-left:5% !important;
+        margin-left:9% !important;
     } 
 
     section.activitesamarseille {
         gap:1.3vw!important;
         margin-top:8%;
+        margin-left:7%!important;
     }
     section.activitesamarseille .activites-cardsmarseille {
         width:20vw!important;
@@ -836,9 +832,9 @@ footer li {
     } 
     footer {
         display:flex;
-        width:99%!important;
+        width:95%!important;
         height:auto;
-        margin-left:0%!important;
+        margin-left:7%!important;
     } 
     footer H3 {
         margin-left:10%!important;
@@ -858,6 +854,8 @@ footer li {
         }
     
         }
+
+/* 
 
 /* 
    RESPONSIVE MOBILE (max-width: 768px)
