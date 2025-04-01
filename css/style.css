@@ -587,31 +587,36 @@ footer li {
     opacity: 21;
     padding-bottom: 12px;
   } 
- /* Le code ci-dessous correspond à la version responsive uniquement */
-
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
-
+    body {
+    max-width:1024px!important; 
+    }
     
     nav {
-        display:flex;
-        gap:5px;
-        padding:0px;
+        gap:0px;
+        padding:0px!important;
         max-width:100%;
     } 
     .logo {
         padding:0;
     }
     .nav-links {
+        align-items:right;
         margin:0;
         padding:0%;
-        padding-top:0%!important;
     } 
-    .nav-links, .hebergementss, .activitess{
-        margin:0!important;
-        padding:0%!important;
+   header .nav-links{
+        display: flex;
+        justify-content: flex-end!important;
+        align-items: center; 
+        line-height:0;
+        padding-top:1%!important;
         
+    }
+    .hebergementss  {
+        padding-top:2%!important;
     }
    .hebergementss::before, .activitess::before {
     content: "";
@@ -657,28 +662,34 @@ footer li {
 
     ul.filters {
         width:100%;
-        margin-left:4.5%!important;
+        margin-left:6%!important;
         margin-top:0%!important;
         margin-bottom:3%!important;
         text-align:center!important;
         gap:2%;
     } h2.filter-title {
         margin-top:0%;
-        padding-top:1%;
+        padding-top:0%;
     }
     ul.filters button {
         width:15vw;
+        max-width:120px;
+        font-size:0.8em!important;
         display:flex;
         justify-content:center!important;
-        font-size:15px;
-        padding-left:10%;
         gap:2%;
+        white-space:nowrap;
+    } 
+    ul.filters button.Familial {
+        width:97%!important;
+        
     }
     ul.filters li {
         text-align:center!important;
+        
     }
     ul.filters i {
-        font-size:1.8vw;
+        font-size:1.7vw;
     }
     .main-container{
         margin:0 auto; 
@@ -686,11 +697,12 @@ footer li {
 }      
     .hebergements-and-populaires {
         flex-direction:column;
-        margin-left:3%;
+        margin-left:2%;
+        height:auto;
+        width:100%;
 }
     section.hebergements {
-        width:100% !important ;
-        margin-left:1%;
+        width:96% !important;
     } 
     div.hebergements-and-populaires h2.section-titlemarseille {
         margin-left:3%!important;
@@ -698,7 +710,7 @@ footer li {
     .hebergements {
         background-color:#F2F2F2;
         padding:0;
-        margin: 0 auto;
+        margin-left:0%!important;
     }
     .hebergements-cards {
        margin-left:0%!important;
@@ -739,10 +751,11 @@ footer li {
     }
 .populaires {
   display: flex;
-  width:100%!important;
+  width:96%!important;
+  max-width:1024px;
   margin-top: 5%;
-  margin-left:1%;
-  margin-bottom:6%;
+  margin-left:0%;
+  margin-bottom:0%;
   flex-direction: column;
   box-sizing: border-box;
   background-color:#F2F2F2;
@@ -768,14 +781,14 @@ footer li {
   margin-top:4%;
 }
 .populaires-cards .card {
-    width:27vw;
+    width:26vw;
     min-width:180px;
     max-width:280px;
     height:auto;
     margin: 0;
     padding-left:0%!important;
     padding:3px;
-    padding-right:5%;
+    padding-right:6%;
     
 } .populaires-cards h3 {
     font-size:13px;
@@ -790,25 +803,22 @@ footer li {
         width:36%;
     
         
-    } section.activitesamarseille  {
-        margin-left:4%!important;
-        margin-top:5%;
-
     } 
-    h2.section-titlemarseille {
-        margin-left:6% !important;
+    .section-titlemarseille {
+        margin-left:5% !important;
     } 
 
     section.activitesamarseille {
         gap:1.3vw!important;
+        margin-top:8%;
     }
     section.activitesamarseille .activites-cardsmarseille {
-        width:21vw!important;
+        width:20vw!important;
 
     }
     section.activitesamarseille img {
         display:block;
-        width:21vw;
+        width:20vw;
         height:22vw;
         object-fit:cover;
     }
@@ -826,8 +836,9 @@ footer li {
     } 
     footer {
         display:flex;
-        width:99%;
-        margin-left:5%!important;
+        width:99%!important;
+        height:auto;
+        margin-left:0%!important;
     } 
     footer H3 {
         margin-left:10%!important;
@@ -837,9 +848,9 @@ footer li {
         margin-left:10%;
         padding-left:0%!important;
         white-space:nowrap;
-        width:18vw;
-        max-width:220px;
-        min-width:140px;
+        width:18vw!important;
+        max-width:220px!important;
+        min-width:140px!important;
     }
         footer li {
             line-height:1;
@@ -847,6 +858,7 @@ footer li {
         }
     
         }
+
 /* 
    RESPONSIVE MOBILE (max-width: 768px)
     */
