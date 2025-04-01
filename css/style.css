@@ -674,6 +674,7 @@ footer li {
     ul.filters button {
         width:15vw;
         max-width:120px;
+        color:black;
         font-size:0.8em!important;
         display:flex;
         justify-content:center!important;
