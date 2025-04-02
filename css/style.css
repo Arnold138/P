@@ -888,26 +888,43 @@ header h1 {
 
     @media screen and (max-width: 768px) {
         /* Conteneur principal */
+
+        body {
+            width:100%!important;
+            max-width:768px!important;
+        }
         .main-container {
           padding: 0 5%;
           box-sizing: border-box;
         }
       
-        /* Header */
+        /* Header */ 
+    header { 
+        max-width:768px!important;
+        width:100%;
+        margin-left:0vw!important;
+        padding-left:0vw!important;
+    }
         nav {
+          max-width:768px!important;
+          width:100%!important;
           flex-direction: column;
-          align-items: center;
+          justify-content:center!important;
+           align-items: center;
+          
         }
         .nav-links {
           width: 100%;
-          margin: 0;
-          padding: 0;
-          justify-content: space-around;
-          position: static;
+          gap:30vw;
+          align-items:center!important;
+        
         }
       
         .logo {
-          margin: 5% auto;
+            width:19vw;
+            height:7vw;
+            padding-bottom:10vw;
+            align-items:center!important;
         }
         .search-text, strong {
             display: none; /* Cache le texte */
@@ -917,7 +934,7 @@ header h1 {
             font-size: 18px;
         }
        .search-text {
-        display: none;
+        display:none;
        }
         /* Barre de recherche */
         form {
@@ -926,7 +943,7 @@ header h1 {
           justify-content: center;
         }
         .search-text {
-          display: none;
+          display:none;
         }
         .search-icon {
           display: inline-block;
@@ -990,16 +1007,20 @@ header h1 {
            }
       .populaires {
           padding-left:4%;
+          display:flex;
+          flex-direction:column!important;
       }
         .populaires-cards {
           display: flex;
+          flex-direction:column; 
+          max-width:768px; 
           gap: 99px;
           width: 100%;
           padding: 0px;
         }
         .populaires-cards .card {
           width: 100%;
-          padding-right: 41%;
+          padding-right:0%;
         }
       
         /* Activités */
