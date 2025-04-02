@@ -608,7 +608,7 @@ footer li {
     .logo {
         align-content:center;
         height:2vw;
-        width:6vw
+        width:6vw;
     }
    .nav-links { 
     font-size:16px;
@@ -754,14 +754,17 @@ header h1 {
     width: 100%;
     height: 12.5vw!important;
     object-fit: cover;
-  } 
+  }  
+    h2.afficher-plus {
+        margin-top:1vw!important;
+    }
+    
     .afficher-plustitle {
         display:flex;
         text-align:left!important;
         padding-bottom:2%;
-        padding-left:0%!important;
+        padding-top:0%!important;
         margin-left:0%!important;
-        line-height:0;
     }
 .populaires {
   display: flex;
@@ -783,7 +786,7 @@ header h1 {
  i.fa-solid.fa-chart-line {
     display:flex!important;
     align-items:flex-end!important;
-    margin-left:58vw!important;
+    margin-left:59vw!important;
 }
 
     
@@ -792,7 +795,7 @@ header h1 {
   flex-direction: row;
   padding-left:3%!important;
   align-items:start;
-  gap: 30px;
+  gap: 35px;
   width: 100%;
   margin-top:2%;
 }
@@ -804,11 +807,11 @@ header h1 {
     margin: 0;
     padding-left:0%!important;
     padding:3px;
-    padding-right:6%;
+    padding-right:10%;
     
 } .populaires-cards h3 {
     font-size:13px;
-    width:18vw;
+    width:19vw;
 }
   .populaires-cards .card-txt {
     font-size:12px;
@@ -876,10 +879,6 @@ header h1 {
     
         }
 
-
-/* 
-
-/*
 
 /* 
 
