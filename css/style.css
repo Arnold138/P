@@ -595,18 +595,26 @@ footer li {
     }
     
     nav {
-        gap:0px;
+        gap: 0;
         padding:0px!important;
-        max-width:100%;
-    } 
-    .logo {
-        padding:0;
+        width:100%;
+        max-width:1024px!important;
+    } header  {
+        max-width:1024px;
+        width:100%;
+        margin-left:0vw!important;
+        padding-left:0vw!important;
     }
-    .nav-links {
-        align-items:right;
-        margin:0;
-        padding:0%;
-    } 
+    .logo {
+        align-content:center;
+        height:2vw;
+        width:6vw
+    }
+   .nav-links { 
+    font-size:16px;
+    gap:50px;  
+    justify-content: flex-end !important; 
+   }
    header .nav-links{
         display: flex;
         justify-content: flex-end!important;
@@ -621,12 +629,12 @@ footer li {
    .hebergementss::before, .activitess::before {
     content: "";
     position: absolute;
-    height: 2px;
+    height: 2.2px;
     background-color: #0065FC;
     width:99%!important;
     left: 0;
     right: 0;
-    top: -6px;
+    top: -1.1em;
     transform: scaleX(0);
     transform-origin: center;
     transition: transform 0.3s ease-in-out;
@@ -648,13 +656,14 @@ footer li {
 }
 
 /* Empêcher l'appui long de garder l'effet sur mobile */
-.hebergementss, .activitess {
-    touch-action: manipulation;
+.activitess::before{
+    position:absolute;
+    top:-1.2em;
+    height:1px;
 }
-        header {
-            margin-left:1%;
-        }
-    
+header h1 {
+    font-size:1.1em;
+}
     .filter-header {
         flex-direction:column;
     
@@ -662,7 +671,7 @@ footer li {
 
     ul.filters {
         width:100%;
-        margin-left:6%!important;
+        margin-left:7vw!important;
         margin-top:0%!important;
         margin-bottom:3%!important;
         text-align:center!important;
@@ -670,6 +679,8 @@ footer li {
     } h2.filter-title {
         margin-top:0%;
         padding-top:0%;
+        margin-left:7vw;
+        font-size:1em;
     }
     ul.filters button {
         width:15vw;
@@ -691,7 +702,11 @@ footer li {
     }
     ul.filters i {
         font-size:1.7vw;
-    }
+    } 
+        .soustitress {
+
+            margin-left:7vw!important;
+        }
     .main-container{
         flex-direction:column;
 }      
@@ -704,12 +719,12 @@ footer li {
         width:96% !important;
     } 
     div.hebergements-and-populaires h2.section-titlemarseille {
-        margin-left:4%!important;
+        margin-left:4vw!important;
     }
     .hebergements {
         background-color:#F2F2F2;
         padding:0;
-        margin-left:7%!important;
+        margin-left:7vw!important;
     }
     .hebergements-cards {
        margin-left:1%!important;
@@ -752,8 +767,8 @@ footer li {
   display: flex;
   width:96%!important;
   max-width:1024px;
-  margin-top: 5%;
-  margin-left:7%;
+  margin-top: 2vw;
+  margin-left:7vw;
   margin-bottom:0%;
   flex-direction: column;
   box-sizing: border-box;
@@ -768,7 +783,7 @@ footer li {
  i.fa-solid.fa-chart-line {
     display:flex!important;
     align-items:flex-end!important;
-    margin-left:63%!important;
+    margin-left:58vw!important;
 }
 
     
@@ -861,6 +876,10 @@ footer li {
     
         }
 
+
+/* 
+
+/*
 
 /* 
 
