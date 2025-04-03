@@ -979,8 +979,9 @@ header h1 {
         }
         ul.filters button {
             width:100%!important;
-            max-width:300px!important;
+            max-width:200px!important;
             padding-bottom:5%!important;
+            padding-top:5%!important;
             gap:5%!important;
             
         } 
@@ -991,13 +992,12 @@ header h1 {
       
         /* Section hébergements/populaires */
         .hebergements-and-populaires {
-          flex-direction: column;
+          flex-direction: column-reverse;
         }
       
-        section.hebergements,
-        section.populaires {
-          width: 100%;
-          margin-left: 0px;
+        section.hebergements,section.populaires {
+            width: 100%;
+            margin-left: 0px;
             background-color:#F2F2F2;
         }
       
@@ -1016,6 +1016,8 @@ header h1 {
                margin-left:0px;
            }
       .populaires {
+          width:100%!important;
+          max-width:768px!important;
           padding-left:4%;
           display:flex;
           flex-direction:column!important;
@@ -1023,16 +1025,28 @@ header h1 {
         .populaires-cards {
           display: flex;
           flex-direction:column; 
-          max-width:768px; 
-          gap: 99px;
-          width: 100%;
+          max-width:250px; 
+          gap: 10px;
+          width: 90%;
           padding: 0px;
+          padding-bottom:0%!important;
         }
         .populaires-cards .card {
           width: 100%;
           padding-right:0%;
+        } 
+        .populaires-cards .card-content  {
+            padding:0%!important;
+            white-space:nowrap;            
         }
-      
+        .populaires-cards img {
+                width:40%;
+            
+        }
+      i.fa-solid.fa-chart-line {
+          width:10vw!important;
+          margin-left:5%!important;
+      }
         /* Activités */
         section.activitesamarseille {
           flex-direction: row;
