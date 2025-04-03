@@ -898,7 +898,8 @@ header h1 {
 
         body {
             width:100%!important;
-            max-width:768px!important;
+            max-width:768px!important; 
+            margin:auto;
         }
         .main-container {
           padding:0vw;
@@ -923,8 +924,8 @@ header h1 {
           
         }
         .nav-links {
-          width: 97%;
-          gap: 32vw;
+          width: 100%;
+          gap: 36vw;
           align-items:center!important;
         }
       
@@ -933,7 +934,35 @@ header h1 {
             height: 6vw;
             padding-bottom: 7vw;
             margin-left: 4vw;
-        }
+        } 
+
+         .hebergementss::before, .activitess::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: #0065FC;
+    width:100%!important;
+    transform: scaleX(0);
+    transform-origin:left!important;
+    transition: transform 0.3s ease-in-out;
+}
+ .hebergementss::before {
+     right:50px!important;
+     top:15px!important;
+     width:150%!important;
+ } 
+        a.hebergementss:hover::before {
+        width:165%!important;
+        left:-45px
+     
+     
+ } 
+         .activitess::before {
+             top:15px;
+             width:278%!important; 
+             left:-70px!important;
+         }
+        
         .search-text,.recherche-button strong {
             display: none; /* Cache le texte */
         }
