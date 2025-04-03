@@ -126,7 +126,7 @@ nav {
 }
 .logo {
     width: 61px;
-    margin-left: 28px;
+    margin-left: 25px;
     margin-top: 5px;
     height: 19px;
 }
@@ -209,7 +209,7 @@ li {
 } 
 form {
     display: flex;
-    margin: 0px 0px 25px 24px;
+    margin: 0px 0px 0px 21px;
 }
 
 .recherche-button button  {border-top-right-radius: 15px;border-bottom-right-radius:15px;background:#0065FC;color:white;padding: 15px 15px 13px 15px;border: 1px;} 
@@ -234,10 +234,10 @@ input#search {
     font-weight: bolder;
 } 
 
-h1 {margin: 35px 0px 0px 53px;font-size: 22px;}
+h1 {margin: 35px 0px 0px 47px;font-size: 22px;}
 
 .soustitres {
-    margin: 10px 0px 30px 55px;
+    margin: 10px 0px 30px 49px;
 }
 p.filter-title {
     margin-right: 20px;
@@ -508,7 +508,7 @@ section.activitesamarseille {
     width: 100%;
     gap: 0px;
     margin-top: 3%;
-    margin-left: 3%;
+    margin-left: 4%;
 }
 
 .cardsmarseille img {
@@ -516,7 +516,7 @@ section.activitesamarseille {
 }
 
 .activites-cardsmarseille img {
-    width: 300px;
+    width: 284px;
     height: 375px;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
