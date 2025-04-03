@@ -618,10 +618,9 @@ footer li {
    header .nav-links{
         display: flex;
         justify-content: flex-end!important;
-        align-items: center; 
+        align-items: center;
         line-height:0;
-        padding-top:1%!important;
-        
+        padding-top: 5%!important;
     }
     .hebergementss  {
         padding-top:2%!important;
@@ -915,17 +914,16 @@ header h1 {
           
         }
         .nav-links {
-          width: 100%;
-          gap:35vw;
+          width: 97%;
+          gap: 32vw;
           align-items:center!important;
-        
         }
       
         .logo {
-            width:19vw;
-            height:7vw;
-            margin-right:auto;
-            padding-bottom:10vw;
+            width: 17vw;
+            height: 6vw;
+            padding-bottom: 7vw;
+            margin-left: 4vw;
         }
         .search-text,.recherche-button strong {
             display: none; /* Cache le texte */
