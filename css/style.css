@@ -661,8 +661,15 @@ footer li {
     height:1px;
 }
 header h1 {
-    font-size:1.1em;
-}
+    font-size:1.1em; 
+    margin-left:6vw
+} 
+    .soustitres {
+        margin-left:6vw;
+    } 
+    form {
+        margin-left:4vw!important;
+    }
     .filter-header {
         flex-direction:column;
     
@@ -677,7 +684,7 @@ header h1 {
         gap:2%;
     } h2.filter-title {
         margin-top:0%;
-        padding-top:0%;
+        padding-top:3%;
         margin-left:7vw;
         font-size:1em;
     }
@@ -692,7 +699,8 @@ header h1 {
         white-space:nowrap;
     } 
     ul.filters button.Familial {
-        width:97%!important;
+        width:97%!important; 
+        padding-top:11%
         
     }
     ul.filters li {
