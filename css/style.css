@@ -793,7 +793,7 @@ header h1 {
  i.fa-solid.fa-chart-line {
     display:flex!important;
     align-items:flex-end!important;
-    margin-left:59vw!important;
+    margin-left:67vw!important;
 }
 
     
@@ -802,22 +802,22 @@ header h1 {
   flex-direction: row;
   padding-left:3%!important;
   align-items:start;
-  gap: 35px;
+  gap: 60px;
   width: 100%;
   margin-top:2%;
 }
 .populaires-cards .card {
-    width:26vw;
+    width:25vw;
     min-width:180px;
     max-width:280px;
     height:auto;
     margin: 0;
     padding-left:0%!important;
     padding:3px;
-    padding-right:10%;
+    padding-right:15%;
     
 } .populaires-cards h3 {
-    font-size:13px;
+    font-size:15px!important;
     width:19vw;
 }
   .populaires-cards .card-txt {
