@@ -894,7 +894,8 @@ header h1 {
             max-width:768px!important;
         }
         .main-container {
-          padding: 0 5%;
+          padding: 0 5vw;
+          width:100%!important;
           box-sizing: border-box;
         }
       
@@ -915,7 +916,7 @@ header h1 {
         }
         .nav-links {
           width: 100%;
-          gap:30vw;
+          gap:35vw;
           align-items:center!important;
         
         }
@@ -923,10 +924,10 @@ header h1 {
         .logo {
             width:19vw;
             height:7vw;
+            margin-right:auto;
             padding-bottom:10vw;
-            align-items:center!important;
         }
-        .search-text, strong {
+        .search-text,.recherche-button strong {
             display: none; /* Cache le texte */
         }
         .search-icon {
@@ -968,15 +969,18 @@ header h1 {
         }
         .filters li {
           width: 48%;
-          margin-bottom: 4%;
+          margin-bottom: 13%;
         }
-        .filters button {
-          width: 100%;
-          padding: 10px;
-          font-size: 1rem;
-          box-sizing: border-box;
-          justify-content: center;
-          gap: 5px;
+        ul.filters button {
+            width:100%!important;
+            max-width:300px!important;
+            padding-bottom:5%!important;
+            gap:5%!important;
+            
+        } 
+        ul.filters i {
+            max-width:fit-content;
+            font-size:5vw;
         }
       
         /* Section hébergements/populaires */
