@@ -901,7 +901,8 @@ header h1 {
             max-width:768px!important;
         }
         .main-container {
-          padding: 0 5vw;
+          padding:0vw;
+          margin:0vw!important;
           width:100%!important;
           box-sizing: border-box;
         }
@@ -996,7 +997,8 @@ header h1 {
         }
       
         section.hebergements,section.populaires {
-            width: 100%;
+            width: 100%!important;
+            max-width:768px!important;
             margin-left: 0px;
             background-color:#F2F2F2;
         }
@@ -1018,16 +1020,15 @@ header h1 {
       .populaires {
           width:100%!important;
           max-width:768px!important;
-          padding-left:4%;
           display:flex;
           flex-direction:column!important;
       }
         .populaires-cards {
           display: flex;
-          flex-direction:column; 
-          max-width:250px; 
+          flex-direction:column;
+          max-width:250px;
           gap: 10px;
-          width: 90%;
+          width: 100%;
           padding: 0px;
           padding-bottom:0%!important;
         }
@@ -1037,11 +1038,19 @@ header h1 {
         } 
         .populaires-cards .card-content  {
             padding:0%!important;
-            white-space:nowrap;            
+            white-space:nowrap;
+            padding-right: 18%!important;
+        } 
+        .populaires-cards h3 {
+            font-size:12px!important;
         }
         .populaires-cards img {
                 width:40%;
             
+        } 
+        .populaires-cards a {
+
+            width:100%;
         }
       i.fa-solid.fa-chart-line {
           width:10vw!important;
