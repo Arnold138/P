@@ -621,11 +621,9 @@ footer li {
         justify-content: flex-end!important;
         align-items: center;
         line-height:0;
-        padding-top: 5%!important;
+        padding-top: 1%!important;
     }
-    .hebergementss  {
-        padding-top:2%!important;
-    }
+    
    .hebergementss::before, .activitess::before {
     content: "";
     position: absolute;
@@ -664,7 +662,7 @@ footer li {
 header h1 {
     font-size:1.1em; 
     margin-left:3vw;
-    margin-top:0%;
+    margin-top:5%;
 } 
     .soustitres {
         margin-left:3vw;
