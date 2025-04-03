@@ -609,6 +609,7 @@ footer li {
         align-content:center;
         height:2vw;
         width:6vw;
+        margin-left:1.5vw!important
     }
    .nav-links { 
     font-size:16px;
@@ -662,13 +663,14 @@ footer li {
 }
 header h1 {
     font-size:1.1em; 
-    margin-left:6vw
+    margin-left:3vw;
+    margin-top:0%;
 } 
     .soustitres {
-        margin-left:6vw;
+        margin-left:3vw;
     } 
     form {
-        margin-left:4vw!important;
+        margin-left:0vw!important;
     }
     .filter-header {
         flex-direction:column;
@@ -677,7 +679,7 @@ header h1 {
 
     ul.filters {
         width:100%;
-        margin-left:7vw!important;
+        margin-left:3vw!important;
         margin-top:0%!important;
         margin-bottom:3%!important;
         text-align:center!important;
@@ -685,7 +687,7 @@ header h1 {
     } h2.filter-title {
         margin-top:0%;
         padding-top:3%;
-        margin-left:7vw;
+        margin-left:3vw;
         font-size:1em;
     }
     ul.filters button {
@@ -712,7 +714,7 @@ header h1 {
     } 
         .soustitress {
 
-            margin-left:7vw!important;
+            margin-left:3vw!important;
         }
     .main-container{
         flex-direction:column;
@@ -731,7 +733,7 @@ header h1 {
     .hebergements {
         background-color:#F2F2F2;
         padding:0;
-        margin-left:7vw!important;
+        margin-left:2vw!important;
     }
     .hebergements-cards {
        margin-left:1%!important;
@@ -778,7 +780,7 @@ header h1 {
   width:96%!important;
   max-width:1024px;
   margin-top: 2vw;
-  margin-left:7vw;
+  margin-left:2vw;
   margin-bottom:0%;
   flex-direction: column;
   box-sizing: border-box;
@@ -831,13 +833,13 @@ header h1 {
         
     } 
     .section-titlemarseille {
-        margin-left:10% !important;
+        margin-left:5% !important;
     } 
 
     section.activitesamarseille {
         gap:1.3vw!important;
         margin-top:8%;
-        margin-left:7%!important;
+        margin-left:3%!important;
     }
     section.activitesamarseille .activites-cardsmarseille {
         width:20vw!important;
