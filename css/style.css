@@ -922,6 +922,9 @@ header h1 {
           justify-content:center!important;
            align-items: center;
           
+        }     header .nav-links {
+            justify-content:space-between!important;
+            padding-left:5%!important;
         }
         .nav-links {
           width: 100%;
@@ -984,6 +987,7 @@ header h1 {
           flex-direction: row;
           margin: 0 0 5% 0%;
           justify-content: center;
+            max-width:730px;
             
         } 
         i.fas.fa-map-marker-alt {
