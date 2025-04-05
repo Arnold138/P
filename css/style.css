@@ -1067,6 +1067,8 @@ header h1 {
         }
       section.hebergements {
           background-color:white;
+      } div.hebergements-and-populaires h2.section-titlemarseille {
+          font-size:1.3em;
       }
         .hebergements-cards {
           display: grid;
@@ -1074,7 +1076,13 @@ header h1 {
           gap: 20px;
           padding: 0;
           margin: 5% 0;
+        }     .hebergements-cards .card {
+
+            max-width:740px!important;
+            max-height:150px!important;
         }
+
+        
         section.hebergements .card {
           width: 90vw!important;
             max-width:768px;
@@ -1145,6 +1153,8 @@ header h1 {
           width: 90vw!important;
           margin-bottom:10%;
           padding: 0;
+        }     .section-titlemarseille  {
+            font-size:1.4em;
         }
         .activites-cardsmarseille {
           width: 90vw!important;
