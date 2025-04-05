@@ -869,7 +869,6 @@ header h1 {
     } 
     footer H3 {
         margin-left:10%!important;
-        
     }
     footer ul {
         margin-left:10%;
@@ -900,7 +899,8 @@ header h1 {
             width:100%!important;
             max-width:768px!important; 
             margin:auto;
-        }
+        } 
+        
         .main-container {
           padding:0vw;
           margin:0vw!important;
@@ -1072,7 +1072,12 @@ header h1 {
             width:90vw!important;
             max-width:750px;
             height:30vw!important;
-        }
+        } 
+
+            h2.afficher-plus {
+                margin-left:3vw!important;
+                display: flex;
+            }
            .populaires-title {
                margin-left:0px;
            }
@@ -1127,13 +1132,13 @@ header h1 {
         section.activitesamarseille {
           flex-direction: column;
           width: 90vw!important;
-          margin: 0;
+          margin-bottom:10%;
           padding: 0;
         }
         .activites-cardsmarseille {
           width: 90vw!important;
-          margin-bottom: 20px;
-            padding-bottom:0px
+          margin-bottom: 2vw;
+            padding-bottom:0px;
         }
         .activites-cardsmarseille img {
           width: 90vw!important;
@@ -1142,29 +1147,39 @@ header h1 {
         }
       section.activitesamarseille .card-contentmarseille  {
           width:90vw!important;
-          font-size:1em;
+          font-size:0.8em;
       } 
 
            section.activitesamarseille .activites-cardsmarseille{
               width:90vw!important; 
 
-               footer ul li  {
-                   text-align:left!important; 
+                   footer {
+                       padding:0%!important;
+                   }
+               footer ul{
+                   text-align:left!important;
+                   margin-left:0%!important;
+                   padding-left:0%!important;
                    margin:0vw!important;
                    padding:0vw!important;
                }
+                   footer H3 {
+                       margin-left:0%!important;
+                
+                   }
           }
         /* Footer */
         footer {
           flex-direction: column;
           gap: 20px;
-          padding: 5%;
+          padding: 0%;
           margin: 0;
         }
         .footer-container {
           width: 100%;
           margin: 0;
           text-align: left;
+          display: flex;
         }
       }
     
