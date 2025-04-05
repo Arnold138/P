@@ -449,7 +449,6 @@ p.card-subtitle span
     margin: 0px;
     padding: 0%;
 }
-
 .hebergements .card-rating {
     margin: 0px;
     padding-left: 15px;
@@ -1074,22 +1073,23 @@ header h1 {
           display: grid;
           grid-template-columns: 1fr;
           gap: 20px;
-          padding: 0;
+          padding-left:0%!important;
           margin: 5% 0;
-        }     .hebergements-cards .card {
-
-            max-width:740px!important;
-            max-height:150px!important;
-        }
-
+          width: 100%!important;
+        }   
+       .hebergements-cards .card {
+          height:15vw!important;
+           min-height:130px!important;
+           max-height:700px!important;
+    }
         
         section.hebergements .card {
           width: 90vw!important;
-            max-width:768px;
+          max-width:600px;
         } 
         section.hebergements .card img{
             width:90vw!important;
-            max-width:750px;
+            max-width:500px;
             height:30vw!important;
         } 
 
