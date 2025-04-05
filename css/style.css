@@ -924,7 +924,6 @@ header h1 {
           
         }     header .nav-links {
             justify-content:space-between!important;
-            padding-left:5%!important;
         }
         .nav-links {
           width: 100%;
@@ -936,10 +935,15 @@ header h1 {
         .logo {
             width: 17vw;
             height: 6vw;
-            padding-bottom: 7vw;
+            padding-bottom: 10vw;
             margin-left: 4vw;
         } 
-
+.hebergementss {
+    margin-left:8vw;
+} 
+        .activitess {
+            margin-right:6vw;
+        }
          .hebergementss::before, .activitess::before {
     content: "";
     position: absolute;
@@ -993,6 +997,12 @@ header h1 {
         i.fas.fa-map-marker-alt {
 
             margin-left:0%!important;
+        } 
+
+        .recherche-button button {
+            border-radius:15px;
+            background-color: #0065FC;
+
         }
         
         .search-text {
@@ -1017,18 +1027,19 @@ header h1 {
           display: flex;
           flex-wrap: wrap;
           justify-content: space-between;
-          gap: 3% 4%;
+          gap:0.6em!important;
         }
         .filters li {
-          width: 48%;
-          margin-bottom: 11%;
+          width: 45%;
+          margin-bottom: 10%;
+            max-width:500px;
         }
         ul.filters button {
             width:100%!important;
-            max-width:150px!important;
-            padding-bottom:1em!important;
-            padding-top:1em!important;
-            gap:0.5em!important;
+            max-width:500px!important;
+            padding-bottom:0.8em!important;
+            padding-top:0.8em!important;
+            gap:0.6em!important;
             
         } 
         ul.filters i {
@@ -1117,7 +1128,7 @@ header h1 {
             white-space:nowrap!important;
         }
         .populaires-cards img {
-                width:35%;
+                width:37vw;
             
         } 
         .populaires-cards a {
