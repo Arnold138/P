@@ -611,10 +611,10 @@ footer li {
         width:6vw;
         margin-left:1.5vw!important
     }
-   .nav-links { 
+   .nav-links {
     font-size:16px;
-    gap:50px;  
-    justify-content: flex-end !important; 
+    gap:50px;
+    justify-content: flex-end !important;
    }
    header .nav-links{
         display: flex;
@@ -925,8 +925,10 @@ header h1 {
         }
         .nav-links {
           width: 100%;
-          gap: 38vw;
-          align-items:center!important;
+            display:flex;
+            justify-content:space-between!important;
+          gap: 0vw!important;
+          align-items:stretch!important;
         }
         .logo {
             width: 17vw;
@@ -1057,14 +1059,19 @@ header h1 {
           margin: 5% 0;
         }
         section.hebergements .card {
-          width: 100%;
+          width: 90vw!important;
+            max-width:768px;
         } 
-    
+        section.hebergements .card img{
+            width:90vw!important;
+            max-width:750px;
+            height:30vw!important;
+        }
            .populaires-title {
                margin-left:0px;
            }
       .populaires {
-          width:100%!important;
+          width:100vw!important;
           max-width:768px!important;
           display:flex;
           flex-direction:column!important;
@@ -1073,19 +1080,19 @@ header h1 {
         .populaires-cards {
           display: flex;
           flex-direction:column;
-          max-width:300px;
+          max-width:750px;
           gap: 10px;
           padding: 0px;
           padding-bottom:0%!important;
         }
         .populaires-cards .card {
-          max-width:300px!important;
+          max-width:768px!important;
           width:clamp(300px,90vw,750px);
           padding-right:0%;
         } 
         .populaires-cards .card-content  {
              width:30vw!important;
-            padding:0%!important;
+               max-width:750px!important;
         } 
         .populaires-cards h3 {
             font-size:14px!important;
@@ -1112,7 +1119,7 @@ header h1 {
       }
         /* Activités */
         section.activitesamarseille {
-          flex-direction: row;
+          flex-direction: column;
           width: 100%;
           margin: 0;
           padding: 0;
