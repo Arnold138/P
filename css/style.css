@@ -935,7 +935,7 @@ header h1 {
             width: 17vw;
             height: 6vw;
             padding-bottom: 10vw;
-            margin-left: 4vw;
+            margin-left: 0vw!important;
         } 
 .hebergementss {
     margin-left:8vw;
@@ -1078,19 +1078,20 @@ header h1 {
           width: 100%!important;
         }   
        .hebergements-cards .card {
-          height:15vw!important;
-           min-height:130px!important;
+           min-height:140px!important;
            max-height:700px!important;
     }
         
         section.hebergements .card {
           width: 90vw!important;
           max-width:600px;
+          height: fit-content;
+          padding-bottom: 15%;
         } 
         section.hebergements .card img{
             width:90vw!important;
             max-width:500px;
-            height:30vw!important;
+            height:34vw!important;
         } 
 
             h2.afficher-plus {
