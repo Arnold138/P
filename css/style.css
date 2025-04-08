@@ -582,9 +582,10 @@ footer li {
   form input#search {
     font-weight: bold;
     color: #000;
-    opacity: 21;
     padding-bottom: 12px;
   } 
+
+
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
@@ -736,7 +737,7 @@ header h1 {
        padding-left:3vw!important;
        grid-template-columns: repeat(0, 1fr);
        gap: 1.5rem;
-       padding: 0 auto;
+       padding: 0%;
        margin:0 auto;
   }
   .hebergements-cards .card {
@@ -750,7 +751,7 @@ header h1 {
   } 
 
   .hebergements-cards .card h3 {
-    font-size: 1.rem; 
+    font-size: 1rem; 
   }
   .hebergements-cards .card p {
     font-size: 1rem;
@@ -880,7 +881,6 @@ header h1 {
             line-height:1;
             margin-bottom:13%!important;
         }
-    
         }
 
 
@@ -1095,7 +1095,7 @@ header h1 {
         } 
             section.hebergements article.card {
                 padding-bottom:3em!important;
-                height: clamp(140px,20vw 800px)!important;
+                height: clamp(140px, 20vw, 750px);
             }
         section.hebergements .card-rating {
                 padding-bottom:5em!important;
