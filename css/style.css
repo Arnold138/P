@@ -900,8 +900,6 @@ header h1 {
         } 
         
         .main-container {
-          padding:0vw;
-          margin:0vw!important;
           width:100%!important;
           box-sizing: border-box;
         }
@@ -921,24 +919,19 @@ header h1 {
            align-items: center;
           
         }     header .nav-links {
-            justify-content:space-between!important;
+            justify-content:center!important;
+            gap: 7.5em!important;
         }
-        .nav-links {
-          width: 100%;
-            display:flex;
-            justify-content:space-between!important;
-          gap: 0vw!important;
-          align-items:stretch!important;
-        }
+        
         .logo {
             width: 17vw;
             height: 6vw;
             padding-bottom: 10vw;
             margin-left: 0vw!important;
         } 
-.hebergementss {
-    margin-left:8vw;
-} 
+        .hebergementss {
+            margin-left:8vw;
+        } 
         .activitess {
             margin-right:6vw;
         }
@@ -1060,7 +1053,7 @@ header h1 {
         section.hebergements,section.populaires {
             width: 100%!important;
             max-width:768px!important;
-            margin-left: 0px;
+            margin-right: auto;
             background-color:#F2F2F2;
             height: auto!important;
         }
@@ -1183,8 +1176,21 @@ header h1 {
               width:90vw!important; 
            }
                    footer {
-                       padding:0%!important;
+                       display:flex!important;
+                       justify-content: center!important;
+                       /* padding:0%!important; */
+                       flex-direction:column;
+                       /* margin-left:auto!important; */
+                       /* width: 100%!important; */
+                       /* margin: 10% 10% 10% 10%; */
                    }
+        .footer-container {
+            width:100%!important;
+            justify-content: start;
+            display: flex;
+            margin-left: 1.2em!important;
+            font-size: 16px!important;
+        }
                footer ul{
                    text-align:left!important;
                    margin-left:0%!important;
