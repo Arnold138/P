@@ -774,10 +774,10 @@ header h1 {
     }
 .populaires {
   display: flex;
-  width:96%!important;
-  max-width:1024px;
+  width: 98%!important;
+  max-width: 1023px;
   margin-top: 2vw;
-  margin-left:2vw;
+  margin-left: 1vw;
   margin-bottom:0%;
   flex-direction: column;
   box-sizing: border-box;
@@ -792,7 +792,7 @@ header h1 {
  i.fa-solid.fa-chart-line {
     display:flex!important;
     align-items:flex-end!important;
-    margin-left:67vw!important;
+    margin-left: 61vw!important;
 }
 
     
@@ -806,15 +806,14 @@ header h1 {
   margin-top:2%;
 }
 .populaires-cards .card {
-    width:25vw;
+    width: 23vw;
     min-width:180px;
-    max-width:280px;
+    max-width: 100%;
     height:auto;
     margin: 0;
     padding-left:0%!important;
     padding:3px;
-    padding-right:15%;
-    
+    padding-right: 26%;
 } .populaires-cards h3 {
     font-size:15px!important;
     width:19vw;
@@ -864,7 +863,7 @@ header h1 {
         display:flex;
         width:95%!important;
         height:auto;
-        margin-left:2%!important;
+        margin-left: 3%!important;
     } 
     footer H3 {
         margin-left:10%!important;
@@ -919,10 +918,11 @@ header h1 {
            align-items: center;
           
         }     header .nav-links {
+            width:100%!important;
             justify-content:center!important;
             gap: 7.5em!important;
         }
-        
+    
         .logo {
             width: 17vw;
             height: 6vw;
@@ -946,20 +946,18 @@ header h1 {
     transition: transform 0.3s ease-in-out;
 }
  .hebergementss::before {
-     right:50px!important;
+     right: 47px!important;
      top:15px!important;
      width:150%!important;
  } 
         a.hebergementss:hover::before {
-        width:165%!important;
-        left:-45px
-     
-     
+        width: 374%!important;
+        left: -239px;
  } 
          .activitess::before {
              top:15px;
-             width:278%!important; 
-             left:-70px!important;
+             width: 610%!important;
+             left: -53px!important;
          } 
 
             header h1 {
@@ -1019,6 +1017,7 @@ header h1 {
           flex-wrap: wrap;
           justify-content: space-between;
           gap:0.6em!important;
+          align-items: center!important;
         }
         .filters li {
           width: 45%;
