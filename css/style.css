@@ -791,7 +791,7 @@ header h1 {
  i.fa-solid.fa-chart-line {
     display:flex!important;
     align-items:flex-end!important;
-    margin-left: 69%;
+    margin-left: 63vw;
 }
 
     
@@ -800,32 +800,36 @@ header h1 {
   flex-direction: row;
   padding-left: 2%!important;
   align-items:start;
-  gap: 5em!important;
+  gap: 4em!important;
   width: 97%;
   margin-top:2%;
+  padding-right: 0em!important;
 }
 .populaires-cards .card {
-    width: 23vw;
-    min-width:180px;
+    width: 20vw;
+    min-width: 187px;
     max-width: 100%;
     height:auto;
     margin: 0;
     padding-left:0%!important;
-    padding:3px;
-    padding-right: 26%;
+    padding: 3px;
+    padding-right: 25%;
 } .populaires-cards h3 {
     font-size:15px!important;
     width:19vw;
 }
   .populaires-cards .card-txt {
-    font-size:12px;
-    width:17vw;
-  
-}
+    font-size: 12px;
+    width: 20vw;
+} 
+    .populaires-cards .card-content {
+        width:100%!important;
+    } 
+    .populaires-cards .card-title {
+        font-size:14px!important;
+    }
     .populaires-cards img {
-        width:36%;
-    
-        
+        width: 42%;
     } 
     .section-titlemarseille {
         margin-left:5% !important;
