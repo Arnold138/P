@@ -65,7 +65,7 @@ a {
 .hebergements-and-populaires {
     display: flex;
     gap: 30px;
-    height: 575px;
+    height: 551px;
     margin-bottom: 9%;
 }
 .hebergements-and-populaires section {
@@ -347,9 +347,8 @@ p.soustitress {
 
 h2.afficher-plus {
     font-size: 19px;
-    margin-bottom: 1px;
-    margin-left: 30px;
-    margin-top: 4%;
+    margin-top: 0%;
+    margin-left: 3%;
 }
 
 i.fa-solid.fa-money-bill-wave {
@@ -382,6 +381,7 @@ li {padding-left: 0%;}
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     width: 100%;
+    margin-left: 3%;
 }
 
 .hebergements-cards a {
@@ -390,17 +390,13 @@ li {padding-left: 0%;}
 
 section.hebergements .card {
     background-color: white;
-    border-radius: 20px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-    padding-bottom: 14%;
-    padding-left: 1%;
     padding-right: 1%;
-    width: 87%;
+    width: 85%;
     margin-bottom: 7%;
 }
 section.hebergements .card img {
     width: 100%;
-    height: 75%;
+    height: 100px;
     object-fit: cover;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -413,15 +409,11 @@ section.hebergements {
     }
 h2.section-titlemarseille {
     margin-top: 3%;
-    padding-top: 0%;
-    width: auto;
-    margin-left: 80px;
+    margin-left: 3%;
 }
 div.hebergements-and-populaires h2.section-titlemarseille {
     margin-left: 5%;
 }
-
-
 p.card-subtitle span 
 {margin: 0px;
     padding: 0%;
@@ -434,17 +426,12 @@ p.card-subtitle span
     padding-left: 14px;
     padding-top: 7px;
 }
-
-
-
 .card-content {
     margin: 0px;
     padding: 0;
 }
 .hebergements .card-rating {
-    margin: 0px;
     padding-left: 15px;
-    padding-bottom: 17px;
 }
 
 p.card-subtitle {
@@ -461,7 +448,7 @@ p.card-subtitle {
 } 
 
  section.populaires {
-    width: 99%;
+    width: 32%;
 } 
 
 
@@ -497,16 +484,15 @@ section.activitesamarseille {
     width: 100%;
     gap: 0px;
     margin-top: 3%;
-    margin-left: 4%;
 }
 
 .cardsmarseille img {
-    width: 360px; /* la pas de classe à la base  */
+    width: 360px; 
 }
 
 .activites-cardsmarseille img {
-    width: 284px;
-    height: 375px;
+    width: 300px;
+    height: 325px;
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
 }
@@ -515,31 +501,17 @@ section.activitesamarseille {
     margin-left: 2%;
     background-color: white;
     border-radius: 20px;
-    padding: 0px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-    padding-bottom: 0px;
-    padding-top: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
-    height: fit-content;
 }
 
 .card-contentmarseille {
     margin-left: 3%; 
 
 }
-
-
-.afficher-plustitle {
-    margin-left: 1%;
-}
-
 header {
     margin-bottom: 40px;
     max-width: 1440px;
 }
- /* a partir de la on insere le footer */
-
  footer {
     display: flex;
     width: 96%;
@@ -555,20 +527,11 @@ footer li {
     list-style: none;
     margin-bottom: 7%;
     font-weight: 400;
-    text-align: left;
-    width: 100%;
+    margin-bottom: 10%;
 }
 
 .footer-container h3 {
-    width: 100%;
     margin-left: 40px;
-    text-align: left;
-} 
-
-.footer-container {
-    width: auto;
-    margin-left: 0%;
-    text-align: center;
 } 
   form input#search {
     font-weight: bold;
@@ -771,7 +734,7 @@ header h1 {
     width: 88%;
     margin: 0;
     padding-right: 1%;
-} 
+}  
     .populaires-cards .card a {
         width:100%;
     }
@@ -1145,13 +1108,8 @@ header h1 {
                    }
           }
         footer {
-          gap: 20px;
+          /* gap: 20px; */
           margin-top: 80px;
-        }
-        .footer-container {
-          width: 31%;
-          margin: 0;
-          text-align: left;
         }
       
     
