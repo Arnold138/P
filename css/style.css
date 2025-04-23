@@ -21,14 +21,6 @@ html {
 body {
     max-width: 1440px;
 }
-
-.main-container {
-    width: 100%;
-    max-width: 1400px;
-    /* margin: 0 auto; */
-    /* padding: 30px; */
-}
-
 a {
     color: inherit;
     text-decoration: none;
@@ -136,13 +128,12 @@ nav {
     display: inline-block;
     /* padding-bottom: 5px; */
     transition: color 0.3s ease-in-out;
-    width: fit-content;
     position: relative;
     padding-top: 3px;
 }
 
 a.hebergementss:hover::before {
-    width: 110%;
+     width: 110%;
 }
 
 .activitess {
@@ -170,7 +161,8 @@ a.hebergementss:hover::before {
     background-color: blue;
     top: -10px;
     left: -1px;
-    transition: width 0.3s ease-in-out;}
+    transition: width 0.3s ease-in-out;
+    }
 
 .activitess::before {
     content: "";
@@ -497,8 +489,7 @@ section.activitesamarseille {
 }
 
 header {
-    margin-bottom: 40px;
-    max-width: 1440px;
+    margin: 0;
 }
  /* a partir de la on insere le footer */
 
@@ -581,12 +572,10 @@ footer li {
     transition: transform 0.3s ease-in-out;
 }
 
-/* Effet au survol (desktop) */
+
 .hebergementss:hover::before, .activitess:hover::before {
     transform: scaleX(1);
 }
-
-/* Effet au clic (mobile & tablette) */
 .hebergementss:active::before, .activitess:active::before {
     transform: scaleX(1);
 }
@@ -595,8 +584,6 @@ footer li {
 .hebergementss:focus::before, .activitess:focus::before {
     transform: scaleX(0);
 }
-
-/* Empêcher l'appui long de garder l'effet sur mobile */
 .activitess::before{
     position:absolute;
     top:-1.2em;
@@ -784,37 +771,21 @@ header h1 {
     */
 
     @media screen and (max-width: 768px) {
-        /* Conteneur principal */
-
-        body {
-            width:100%;
-            max-width:768px; 
-            margin:auto;
-        } 
-        
-        .main-container {
-          width:100%;
-          box-sizing: border-box;
-        }
-      
-        /* Header */ 
-    header { 
-        max-width:768px;
-        width:100%;
-        margin-left:0vw;
-        padding-left:0vw;
-    }
+       
         nav {
-          max-width:768px;
-          width:100%;
+          width: 100%;
           flex-direction: column;
-          justify-content:center;
-           align-items: center;
-          
-        }     header .nav-links {
-            width:100%;
-            justify-content:center;
-            gap: 7.5em;
+          align-items: center;
+          display: flex;
+        }     .nav-links {
+            width: 100%;
+            padding: 0px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        } 
+        nav li {
+            width: 50%;
         }
     
         .logo {
@@ -824,38 +795,27 @@ header h1 {
             margin-left: 0vw;
         } 
         .hebergementss {
-            margin-left:8vw;
+        width: 100%;
         } 
         .activitess {
-            margin-right:6vw;
+        width: 100%;
         }
-         .hebergementss::before, .activitess::before {
-    content: "";
-    position: absolute;
+        
+    .activitess::before {
+    top:100%;
     height: 2px;
     background-color: #0065FC;
-    width:100%;
-    transform: scaleX(0);
-    transform-origin:left;
-    transition: transform 0.3s ease-in-out;
-    top: 1.3em;
-}
- .hebergementss::before {
-     right: 47px;
-     top: 1.3em;
-     width:150%;
- } 
-        a.hebergementss:hover::before {
-        width: 374%;
-        left: -239px;
- } 
-         .activitess::before {
-             top: 1.3em;
-             width: 610%;
-             left: -53px;
-         } 
+    transform: scaleX(2);
+} 
+        .hebergementss::before {
+         top:100%;
+         height: 2px;
+         background-color: #0065FC;
+         transform: scaleX(1);
+         left: -10%;
+        }
 
-            header h1 {
+          header h1 {
                 width:90%;
                 font-size:1.3em
             }
@@ -937,18 +897,15 @@ header h1 {
             font-size:0.9em;
             padding-right:1%;
         }
-    
-        /* Section hébergements/populaires */
+
         .hebergements-and-populaires {
           flex-direction: column-reverse;
+          height: 100%;
         }
       
         section.hebergements,section.populaires {
             width: 100%;
-            max-width:768px;
-            margin-right: auto;
             background-color:#F2F2F2;
-            height: auto;
         }
       section.hebergements {
           background-color:white;
@@ -958,9 +915,8 @@ header h1 {
         .hebergements-cards {
           display: grid;
           grid-template-columns: 1fr;
-          gap: 20px;
-          padding-left:0%;
-          margin: 5% 0;
+          /* gap: 20px; */
+          /* margin: 5% 0; */
           width: 100%;
         }   
        .hebergements-cards .card {
@@ -1041,7 +997,6 @@ header h1 {
           width:10vw;
           margin-left:auto;
       }
-        /* Activités */
         section.activitesamarseille {
           flex-direction: column;
           width: 90vw;
@@ -1071,11 +1026,7 @@ header h1 {
                    footer {
                        display:flex;
                        justify-content: center;
-                       /* padding:0%; */
                        flex-direction:column;
-                       /* margin-left:auto; */
-                       /* width: 100%; */
-                       /* margin: 10% 10% 10% 10%; */
                    }
         .footer-container {
             width:100%;
@@ -1097,7 +1048,6 @@ header h1 {
                    }
           }
         footer {
-          /* gap: 20px; */
           margin-top: 80px;
         }
       
