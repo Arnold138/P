@@ -231,8 +231,9 @@ ul.filters {
     display: flex;
     gap: 10px;
     list-style: none;
-    margin: 28px 0px 0px 0px;
+    margin-left: 3%;
     padding: 0px;
+    margin-top: 0;
 }
 
 ul.filters button {
@@ -315,20 +316,19 @@ button:hover{
    transition: all 0.3s ease-in-out;
 } 
 i.fa-solid.fa-info {
-    display: inline-flex;
-    align-items: center;
     width: 19px;
     height: 19px;
     border: 1px solid #D9D9D9;
     border-radius: 50%;
     justify-content: center;
-    padding: inherit;
-    margin-right: 10Px;
+    margin-right: 1%;
+    display: flex;
 }
 
 p.soustitress {
     font-size: 16px;
     margin-left: 3%;
+    display: flex;
 }  
 
 h2.afficher-plus {
@@ -662,7 +662,6 @@ header h1 {
   }
   .hebergements-cards .card {
       line-height:1;
-      height: 15vw;
   } 
 
   .hebergements-cards .card h3 {
@@ -688,28 +687,35 @@ header h1 {
     }
 .populaires {
   display: flex;
-  flex-direction: column;
 } 
+    section.populaires {
+        width:100%;
+        flex-wrap: wrap;
+        margin-left: 2%;
+    }
 .populaires-title {
   margin-left: 3%;
-  width: 93%;
+  width: 100%;
+  display: flex;
 }  
  i.fa-solid.fa-chart-line {
     display:flex;
-    align-items:flex-end;
     margin-left: auto;
+    margin-right: 3%;
 }
 
     
 .populaires-cards {
   display: flex;
-  padding-left: 3%;
+  padding-left: 2%;
   gap: 0%;
   width: 97%;
   margin-top:2%;
+  flex-direction: row;
+  padding: 0 0% 2% 2%;
 }
 .populaires-cards .card {
-    width: 88%;
+    width: 94%;
     margin: 0;
     padding-right: 1%;
 } .populaires-cards .card a {
