@@ -392,11 +392,11 @@ section.hebergements .card {
     background-color: white;
     border-radius: 20px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-    padding-bottom: 13%;
+    padding-bottom: 14%;
     padding-left: 1%;
     padding-right: 1%;
-    width: 85%;
-    margin-bottom: 8%;
+    width: 87%;
+    margin-bottom: 7%;
 }
 section.hebergements .card img {
     width: 100%;
@@ -712,7 +712,7 @@ header h1 {
         width:100%;
 }
     section.hebergements {
-        width: 95%;
+        width: 99%;
     } 
     div.hebergements-and-populaires h2.section-titlemarseille {
         margin-left:3.5vw;
@@ -723,10 +723,6 @@ header h1 {
         margin-left:2vw;
     }
     .hebergements-cards {
-       margin-left:1%;
-       padding-left:3vw;
-       gap: 0;
-       padding: 0%;
        margin-left: 3%;
   }
   .hebergements-cards .card {
@@ -745,16 +741,8 @@ header h1 {
     height: 12.5vw;
     object-fit: cover;
   }  
-    h2.afficher-plus {
-        margin-top:1vw;
-    }
-    
-    .afficher-plustitle {
+  .afficher-plustitle {
         display:flex;
-        text-align:left;
-        padding-bottom:2%;
-        padding-top:0%;
-        margin-left:0%;
     }
 .populaires {
   display: flex;
@@ -769,6 +757,8 @@ header h1 {
     align-items:flex-end;
     margin-left: auto;
 }
+
+    
 .populaires-cards {
   display: flex;
   padding-left: 3%;
@@ -780,7 +770,7 @@ header h1 {
     width: 88%;
     margin: 0;
     padding-right: 1%;
-} 
+}
     .populaires-cards .card a {
         width:100%;
     }
@@ -788,7 +778,8 @@ header h1 {
     font-size: 12px;
 } a {
     width: 100%;
-}  
+} 
+ 
     .populaires-cards .card-title {
         font-size: 14.5px;
     }
@@ -800,13 +791,12 @@ header h1 {
     } 
 
     section.activitesamarseille {
-        gap:1.3vw;
-        margin-top:8%;
+        gap: 1%;
+        margin-top: 0;
         margin-left:3%;
     }
     section.activitesamarseille .activites-cardsmarseille {
-        width:20vw;
-
+        width: 21%;
     }
     section.activitesamarseille img {
         display:block;
@@ -815,16 +805,10 @@ header h1 {
         object-fit:cover;
     }
     section.activitesamarseille .card-contentmarseille {
-        margin-top:1em;
-        margin-left:1em;
-        margin-bottom:2.3em;
-        padding-top:0em ;
+        margin-left: 4%;
         font-size:1.7vw;
         line-height:1;
-        height:2vw;
-        min-height:10px;
-        max-height:2.5vw;
-
+        height: 43px;
     } 
     footer {
         display:flex;
@@ -848,10 +832,6 @@ header h1 {
             margin-bottom:13%;
         }
         }
-
-
-/* 
-
 /* 
    RESPONSIVE MOBILE (max-width: 768px)
     */
