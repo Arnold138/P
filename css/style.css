@@ -229,7 +229,7 @@ p.filter-title {
 }
 ul.filters {
     display: flex;
-    gap: 8px;
+    gap: 10px;
     list-style: none;
     margin: 28px 0px 0px 0px;
     padding: 0px;
@@ -275,6 +275,7 @@ i.fas.fa-solid.fa-money-bill-wave {
     margin-bottom: 25px;
     margin-left: 0px;
     display: flex;
+    flex-direction: column;
 }
 
 i.fas.fa-solid.fa-person {
@@ -338,7 +339,7 @@ h2.afficher-plus {
 
 i.fa-solid.fa-money-bill-wave {
     padding-left: 1%;
-    margin-left: 3%;
+    margin-left: 1%;
 }
 
 .economique strong {
@@ -763,16 +764,8 @@ header h1 {
     }
         }
 
-
-/* 
-
-/* 
-   RESPONSIVE MOBILE (max-width: 768px)
-    */
-
     @media screen and (max-width: 768px) {
-       
-        nav {
+       nav {
           width: 100%;
           flex-direction: column;
           align-items: center;
@@ -833,11 +826,13 @@ header h1 {
         /* Barre de recherche */
         form {
           flex-direction: row;
-          margin: 0 0 5% 0%;
+          margin:0;
           justify-content: center;
-            max-width:730px;
-            
+          width: 100%;
         } 
+        form input#search {
+            width:50%;
+        }
         i.fas.fa-map-marker-alt {
 
             margin-left:0%;
@@ -859,36 +854,30 @@ header h1 {
       
         /* TITRE "Filtres" */
         .filter-title {
-          display: block;
           width: 100%;
           font-weight: bold;
           font-size: 18px;
-          margin: 5% 0 2% 0%;
+          margin: 0;
         }
       
         /* Filtres */
-        .filters {
-          display: flex;
+        ul.filters {
           flex-wrap: wrap;
-          justify-content: space-between;
-          gap:0.6em;
-          align-items: center;
+          justify-content: center;
         }
         .filters li {
-          width: 45%;
-          margin-bottom: 10%;
-            max-width:500px;
+          width: 44%;
+          margin-bottom: 12%;
         }
-        ul.filters button {
-            width:100%;
-            max-width:500px;
-            padding-bottom:0.8em;
-            padding-top: 0.7em;
-            gap:0.6em;
+        ul.filters {
+        gap: 7%;
+        width: 100%;
+        margin-top: 4%;
         } 
-        ul.filters i {
-            max-width:fit-content;
-            font-size:5vw;
+        ul.filters button {
+            width: 91%;
+            padding: 6% 27% 7% 27%;
+            white-space: nowrap;
         } 
 
         p.soustitress  {
@@ -897,7 +886,8 @@ header h1 {
             font-size:0.9em;
             padding-right:1%;
         }
-
+    
+        /* Section hébergements/populaires */
         .hebergements-and-populaires {
           flex-direction: column-reverse;
           height: 100%;
@@ -906,6 +896,7 @@ header h1 {
         section.hebergements,section.populaires {
             width: 100%;
             background-color:#F2F2F2;
+            margin: 0;
         }
       section.hebergements {
           background-color:white;
@@ -915,8 +906,7 @@ header h1 {
         .hebergements-cards {
           display: grid;
           grid-template-columns: 1fr;
-          /* gap: 20px; */
-          /* margin: 5% 0; */
+          margin: 0;
           width: 100%;
         }   
        .hebergements-cards .card {
@@ -925,10 +915,7 @@ header h1 {
     }
         
         section.hebergements .card {
-          width: 90vw;
-          max-width:600px;
-          padding-bottom:3em;
-            height:40vw;
+          width: 100%;
         } 
         section.hebergements .card img{
             width:90vw;
@@ -936,13 +923,10 @@ header h1 {
             height:34vw;
         } 
             section.hebergements article.card {
-                padding-bottom:3em;
-                height: clamp(140px, 20vw, 750px);
+            margin-bottom: 6%;
+            padding: 0;
+            height: 93%;
             }
-        section.hebergements .card-rating {
-                padding-bottom:5em;
-            }
-            
             h2.afficher-plus {
                 margin-left:3vw;
                 display: flex;
@@ -997,10 +981,11 @@ header h1 {
           width:10vw;
           margin-left:auto;
       }
+        /* Activités */
         section.activitesamarseille {
           flex-direction: column;
-          width: 90vw;
-          margin-bottom:10%;
+          width: 90%;
+          margin: 0;
           padding: 0;
         }     .section-titlemarseille  {
             font-size:1.4em;
@@ -1008,7 +993,7 @@ header h1 {
         .activites-cardsmarseille {
           width: 90vw;
           margin-bottom: 2vw;
-            padding-bottom:0px;
+          padding-bottom:0px;
         }
         .activites-cardsmarseille img {
           width: 90vw;
@@ -1019,35 +1004,25 @@ header h1 {
           width:90vw;
           font-size:0.8em;
       } 
-
-           section.activitesamarseille .activites-cardsmarseille{
-              width:90vw; 
-           }
                    footer {
                        display:flex;
-                       justify-content: center;
                        flex-direction:column;
+                       align-items: flex-start;
                    }
-        .footer-container {
-            width:100%;
-            justify-content: start;
-            display: flex;
-            margin-left: 1.2em;
-            font-size: 16px;
-        }
-               footer ul{
+            footer ul{
                    text-align:left;
                    margin-left:0%;
                    padding-left:0%;
                    margin:0vw;
                    padding:0vw;
                }
-                   footer H3 {
+                   .footer-container h3 {
                        margin-left:0%;
                 
                    }
           }
         footer {
+          /* gap: 20px; */
           margin-top: 80px;
         }
       
