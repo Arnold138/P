@@ -725,18 +725,16 @@ margin-bottom: 4%;
      p.soustitres {
          margin: 3% 0 7% 5%; 
      }
-        
         .search-text,.recherche-button strong {
-            display: none; /* Cache le texte */
+            display: none;
         }
         .search-icon {
-            display: inline-block; /* Affiche la loupe*/
+            display: inline-block;
             font-size: 18px;
         }
        .search-text {
         display:none;
        }
-        /* Barre de recherche */
         form {
           flex-direction: row;
           margin:0;
@@ -756,7 +754,6 @@ margin-bottom: 4%;
             background-color: #0065FC;
 
         }
-        
         .search-text {
           display:none;
         }
@@ -770,8 +767,6 @@ margin-bottom: 4%;
           font-weight: bold;
           margin-left: 5%;
         }
-      
-        /* Filtres */
         ul.filters {
           flex-wrap: wrap;
           justify-content: center;
