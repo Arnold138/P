@@ -776,7 +776,7 @@ margin-bottom: 4%;
         }
         ul.filters {
         width: 100%;
-        margin-top: 4%;
+        margin: 0 0 0 0;
         } 
         ul.filters button {
             width: 100%;
