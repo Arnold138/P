@@ -712,7 +712,7 @@ margin-bottom: 4%;
     transform: scaleX(2);
     } 
   .nav-links a::before{
-    top:100%;
+    top: 140%;
     height: 2px;
     background-color: #0065FC;
     transform: scaleX(0);
