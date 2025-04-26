@@ -158,7 +158,8 @@ form {
     background:#0065FC;
     color:white;
     padding: 15px 15px 13px 15px;
-    border: 1px;} 
+    border: 1px;
+    } 
 .search-icon, .search-text {
     display: none; 
 
@@ -172,10 +173,18 @@ i.fas.fa-map-marker-alt {
     padding: 14px 20px 15px 20px;
 } 
 input#search {
-    border: solid 1px #F2F2F2;
+    border: none;
     padding: 15px 15px 15px 15px;
     font-weight: bolder;
 } 
+form.flex-wrap {
+    display: flex;
+    justify-content: center;
+    border: 1px solid #F2F2F2;
+    width: 85%;
+    border-radius: 15px;
+    margin: auto;
+}
 h1 {
     margin: 35px 0px 0px 47px;
     font-size: 22px;
@@ -762,7 +771,9 @@ margin-bottom: 4%;
           width: 100%;
         } 
         form input#search {
-            width:50%;
+            width: 52%;
+            border-right-color: white;
+            border-right: none;
         }
         i.fas.fa-map-marker-alt {
 
@@ -772,7 +783,8 @@ margin-bottom: 4%;
         .recherche-button button {
             border-radius:15px;
             background-color: #0065FC;
-
+            box-shadow: 0px 4px 4px 0px #00000040;
+            border-left: none;
         }
         .search-text {
           display:none;
