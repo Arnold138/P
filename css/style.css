@@ -414,8 +414,10 @@ strong {
 }
 h3.card-titlemarseille {
     display: flex;
-    margin: 3% 0 3% 6%;
-    font-size: 22px;
+    margin: 3% 0 7% 6%;
+    font-size: 21px;
+    height: 3vw;
+    align-items: center;
 }
 .activites-cardsmarseille {
     margin-left: 2%;
@@ -425,6 +427,7 @@ h3.card-titlemarseille {
     display: inline-grid;
     padding-right: 0;
     width: 22%;
+    /* height: 36vw; */
 } 
 .card-contentmarseille {
     margin-left: 3%;
@@ -434,7 +437,7 @@ header {
 }
  footer {
     display: flex;
-    width: 96%;
+    width: 98%;
     background-color: #F2F2F2;
     margin-top: 12%;
     margin-left: 2%;
@@ -770,9 +773,9 @@ margin-bottom: 4%;
             display: flex;
             justify-content: center;
             border: 1px solid #F2F2F2;
-            width: 37%;
+            width: 100%;
             border-radius: 15px;
-            margin: auto;
+            margin: 0 0 auto 3%;
         } 
         form input#search {
             width: 100%;
@@ -945,9 +948,9 @@ margin-bottom: 4%;
             object-fit:cover;
           height:40vw;
         }
-      section.activitesamarseille .card-contentmarseille  {
+      section.activitesamarseille h3{
           width:90vw;
-          font-size:0.8em;
+          font-size:16px;
       } 
          footer { 
              display:flex;
