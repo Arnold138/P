@@ -951,6 +951,7 @@ margin-bottom: 4%;
       section.activitesamarseille h3{
           width:90vw;
           font-size:16px;
+          align-items: center;
       } 
          footer { 
              display:flex;
