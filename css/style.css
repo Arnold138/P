@@ -774,7 +774,7 @@ margin-bottom: 4%;
             display: flex;
             justify-content: center;
             border: 1px solid #F2F2F2;
-            width: 100%;
+            width: 98%;
             border-radius: 15px;
             margin: 0 0 auto 3%;
         } 
@@ -867,8 +867,8 @@ margin-bottom: 4%;
           width: 100%;
         } 
         section.hebergements .card img{
-            width:90vw;
-            max-width:750px;
+            width: 99%;
+            /* max-width:750px; */
             height:34vw;
         } 
             section.hebergements article.card {
@@ -940,19 +940,20 @@ margin-bottom: 4%;
             font-size:1.4em;
         }
         .activites-cardsmarseille {
-          width: 90vw;
-          margin-bottom: 2vw;
-          padding-bottom:0px;
-        }
+          width: 90%;
+          margin-bottom:5%;
+          padding-bottom:1%;
+        } 
         .activites-cardsmarseille img {
           width: 90vw;
-            object-fit:cover;
+          object-fit:cover;
           height:40vw;
         }
       section.activitesamarseille h3{
           width:90vw;
           font-size:16px;
           align-items: center;
+          margin: 4% 0% 7% 4%;
       } 
          footer { 
              display:flex;
