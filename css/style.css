@@ -273,9 +273,10 @@ i.fa-solid.fa-info {
         border-radius: 50%;
         justify-content: center;
         margin-right: 1%;
-        display: flex;
         align-items: center;
-        padding: 0.2% 0.5% 0.2% 0.5%;
+        width: 20px;
+        height: 20px;
+        display: flex;
 }
 p.soustitress {
     font-size: 16px;
@@ -570,7 +571,7 @@ header h1 {
 margin-bottom: 4%;
 
 } i.fa-solid.fa-info {
-            padding: 0.7% 1.2% 0.7% 1.2%;
+            /* padding: 0.7% 1.2% 0.7% 1.2%; */
 }
     .main-container{
         flex-direction:column;
@@ -774,7 +775,7 @@ margin-bottom: 4%;
             display: flex;
             justify-content: center;
             border: 1px solid #F2F2F2;
-            width: 98%;
+            width: 97%;
             border-radius: 15px;
             margin: 0 0 auto 3%;
         } 
@@ -831,12 +832,6 @@ margin-bottom: 4%;
             font-size: 15px;
         }
         i.fa-solid.fa-info {
-            display:flex;
-            align-items:center;
-            border-radius: 51%;
-            justify-content: center;
-            min-width: 19px;
-            min-height: 20px;
         }
         .hebergements-and-populaires {
           flex-direction: column-reverse;
