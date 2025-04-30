@@ -570,8 +570,6 @@ header h1 {
 
 margin-bottom: 4%;
 
-} i.fa-solid.fa-info {
-            /* padding: 0.7% 1.2% 0.7% 1.2%; */
 }
     .main-container{
         flex-direction:column;
@@ -830,8 +828,6 @@ margin-bottom: 4%;
             align-items: center;
             gap: 1%;
             font-size: 15px;
-        }
-        i.fa-solid.fa-info {
         }
         .hebergements-and-populaires {
           flex-direction: column-reverse;
