@@ -130,7 +130,7 @@ nav {
 .nav-links a::before {
   content: "";
   position: absolute;
-  top: -23px;
+  top: -3px;
   left: 0;
   width: 100%;
   height: 1.5px;
@@ -515,9 +515,11 @@ footer {
 }
 .hebergementss:active::before, .activitess:active::before {
     transform: scaleX(1);
+    top: -15px;
 }
 .hebergementss:focus::before, .activitess:focus::before {
     transform: scaleX(0);
+    top: -10px;
 }
 .activitess::before{
     position:absolute;
