@@ -430,6 +430,10 @@ h3.card-titlemarseille {
     padding-right: 0;
     width: 22%;
 } 
+article.cardmarseille {
+    display: flex;
+    flex-direction: column;
+}
 .card-contentmarseille {
     margin-left: 3%;
 }
