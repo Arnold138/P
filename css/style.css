@@ -1,6 +1,9 @@
 * {
     font-family: 'Raleway', sans-serif;
-}  
+}  body {
+    max-width:1440px;
+    margin:auto;
+}
 
 html {
     scroll-behavior: smooth;
