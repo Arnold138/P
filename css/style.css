@@ -416,7 +416,7 @@ strong {
 }
 h3.card-titlemarseille {
     display: flex;
-    margin: 3% 0 7% 6%;
+    margin: 4% 0 5% 6%;
     font-size: 21px;
     height: 3vw;
     align-items: center;
@@ -429,7 +429,6 @@ h3.card-titlemarseille {
     display: inline-grid;
     padding-right: 0;
     width: 22%;
-    /* height: 36vw; */
 } 
 .card-contentmarseille {
     margin-left: 3%;
