@@ -936,15 +936,15 @@ margin-bottom: 4%;
           padding-bottom:1%;
         } 
         .activites-cardsmarseille img {
-          width: 90vw;
+          width: 100%;
           object-fit:cover;
           height:40vw;
         }
       section.activitesamarseille h3{
-          width:90vw;
+          width: 90%;
           font-size:16px;
           align-items: center;
-          margin: 4% 0% 7% 4%;
+          margin: 4% 0% 4% 4%;
       } 
          footer { 
              display:flex;
