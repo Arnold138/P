@@ -400,11 +400,10 @@ i.fa-solid.fa-chart-line {
 section.activitesamarseille {
     width: 99%;
     margin-left: 2%;
-    /* display: block; */
 }
 
 .cardsmarseille img {
-    width: 360px; /
+    width: 360px;
 }
 .activites-cardsmarseille img {
     width: 100%;
@@ -453,7 +452,6 @@ header {
     justify-content: stretch;
     gap: 16%;
 }
-
 footer li {
     list-style: none;
     margin-bottom: 7%;
