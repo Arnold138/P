@@ -200,9 +200,9 @@ ul.filters {
     display: flex;
     gap: 10px;
     list-style: none;
-    margin-left: 3%;
+    margin-left: 0%;
     padding: 0px;
-    margin-top: 0;
+    margin-top: 40px;
 }
 ul.filters button {
     justify-content: center;
@@ -239,7 +239,8 @@ i.fas.fa-solid.fa-money-bill-wave {
     margin-bottom: 25px;
     margin-left: 0px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: baseline;
 }
 i.fas.fa-solid.fa-person {
     color: blue;
