@@ -3,6 +3,7 @@
 }  body {
     max-width:1440px;
     margin:auto;
+    min-width: 320px;
 }
 
 html {
