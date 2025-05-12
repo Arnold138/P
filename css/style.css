@@ -817,7 +817,6 @@ margin-bottom: 4%;
         h2.filter-title {
           width: 100%;
           font-weight: bold;
-          margin-left: 5%;
         }
         ul.filters {
           flex-wrap: wrap;
@@ -825,6 +824,13 @@ margin-bottom: 4%;
         }
         .filters li {
           width: 44%;
+        } 
+        .filter-header {
+            display:flex;
+            align-items:center;
+            margin:0;
+            padding:0;
+            flex-direction:column;
         }
         ul.filters {
         width: 100%;
