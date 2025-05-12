@@ -588,7 +588,7 @@ margin-bottom: 4%;
         width:100%;
 }
     section.hebergements {
-        width: 99%;
+        width: 97%;
     } 
     div.hebergements-and-populaires h2.section-titlemarseille {
         margin-left:3.5vw;
@@ -630,7 +630,7 @@ margin-bottom: 4%;
   display: flex;
 } 
     section.populaires {
-        width:100%;
+        width: 98%;
         flex-wrap: wrap;
         margin-left: 2%;
     }
@@ -677,7 +677,7 @@ margin-bottom: 4%;
         gap: 1%;
         margin-top: 0;
         margin-left: 3%;
-        width: 100%;
+        width: 98%;
     }
     section.activitesamarseille .activites-cardsmarseille {
         width: 22%;
@@ -694,7 +694,7 @@ margin-bottom: 4%;
     }
     footer {
         display:flex;
-        width: 99%;
+        width: 98%;
         margin-left: 3%;
         gap: 6%;
     } 
@@ -825,6 +825,7 @@ margin-bottom: 4%;
         ul.filters {
         width: 100%;
         margin: 0 0 0 0;
+        gap: 15px;
         } 
         ul.filters button {
             width: 100%;
@@ -846,7 +847,7 @@ margin-bottom: 4%;
         section.hebergements,section.populaires {
             width: 100%;
             background-color:#F2F2F2;
-            margin: 0;
+            margin-top: 30px;
         }
        section.hebergements {
           background-color:white;
@@ -935,6 +936,7 @@ margin-bottom: 4%;
         section.activitesamarseille {
           flex-direction: column;
           width: 100%;
+          margin-top: 50px;
         }     .section-titlemarseille  {
             font-size:1.4em;
         }
@@ -953,6 +955,7 @@ margin-bottom: 4%;
           font-size:16px;
           align-items: center;
           margin: 4% 0% 4% 4%;
+          height: 35px;
       } 
          footer { 
              display:flex;
