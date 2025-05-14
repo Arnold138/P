@@ -474,6 +474,9 @@ footer {
     color: #000;
     padding-bottom: 12px;
   } 
+input::placeholder {
+    color:black;
+}
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     body {
     margin-left: 0;
